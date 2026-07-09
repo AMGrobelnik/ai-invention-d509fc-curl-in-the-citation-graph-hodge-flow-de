@@ -1,0 +1,108 @@
+{
+  "title": "HLSAD Methodology, JCR Suppression-Type Annotations, and Concurrent Work Scan",
+  "summary": "This artifact provides two critical inputs for the Hodge-decomposition citation cartel detector paper. (1) HLSAD (Frantzen & Schaub, KDD 2025, arXiv:2505.24534) uses Hodge Laplacians of multiple orders on time-evolving simplicial complexes; it extracts singular values of up/down Laplacians per snapshot, compares them to a sliding-window SVD baseline via angular deviation, and flags temporal change-points — not static flow manipulation. Evaluated on UCI Online Message (Hits@10=1.0) and US Senate datasets. Key contrast: HLSAD is temporal/change-point; this paper is static/flow-decomposition targeting citation integrity. Ready-to-use Related Work paragraph provided. (2) Suppression annotations: 32 stacking journals confirmed by name across 2018–2025. Critical corrections vs. prior dependency: 2021 has 4 stacking journals (not 3) — Hellenic Journal of Cardiology is stacking not self-citation; 2020 had ZERO stacking (all 33 were self-citation); 2019 stacking names unknown and must be excluded from the positive class. 2024 had 11 stacking journals — the largest cohort. (3) Concurrent work: CDFD (arXiv:2506.12546, June 2025) decomposes flows as w=c+d and captures ALL circular flows beyond triangles, unlike Hodge curl; must be cited and compared.",
+  "answer": "## PART 1 — HLSAD Technical Methodology\n\nHLSAD (Hodge Laplacian-based Simplicial Anomaly Detection) was authored by Florian Frantzen and Michael T. Schaub of RWTH Aachen University and published at KDD 2025 (ACM SIGKDD, August 3–7, 2025, Toronto; DOI: 10.1145/3711896.3736998) [1, 2].\n\n### Core Method\n\nHLSAD operates on time-evolving simplicial complexes — sequences of graph snapshots enriched with higher-order (triangle, tetrahedron) structures [2]. For each temporal snapshot t, the algorithm: (1) computes Hodge Laplacians L_k up to a user-specified order K, separating each into an up-Laplacian L^up_k and a down-Laplacian L^down_k; (2) extracts the top-ℓ singular values from each component; (3) concatenates these into a feature vector σ(t) [2]. A context matrix C(t) stores the last w such vectors. The 'typical' behavior σ̃(t) is derived via SVD of C(t) — the paper found SVD-averaging outperforms arithmetic averaging [2]. The anomaly score is the angular deviation between σ(t) and σ̃(t), using dual windows (short-term w_s=5, long-term w_ℓ=10 snapshots). A point is declared anomalous when its deviation exceeds a threshold [2]. Computational complexity is O(T·Σ_k n_k²·log ℓ) [2].\n\n### Hodge Laplacian Degree\n\nHLSAD uses Hodge Laplacians of multiple orders up to a user-specified K — the key innovation is using k≥1 (edge-level and above) rather than only the graph Laplacian L_0. The boundary operator B_1 is shown explicitly in the paper [2]. The up-Laplacian and down-Laplacian are both extracted, providing two distinct topological perspectives per order [2].\n\n### Real-World Evaluation Datasets\n\nHLSAD was evaluated on two real-world datasets: (1) the UCI Online Message Dataset, a weighted network of message exchanges in a student community at UC Irvine (Hits@10 = 1.0); (2) a US Senate co-sponsorship network (Hits@2 = 1.0) [2]. Synthetic experiments used stochastic block model clique liftings (Hybrid, Resampled, Large with 10,000 nodes, Triangle Closing) [2].\n\n### Key Contrast With This Paper\n\nHLSAD asks 'when did the graph structure change over time?' via spectral change-point detection in evolving networks. This paper asks 'is the static cumulative flow currently manipulated?' via orthogonal Hodge–Helmholtz decomposition of a fixed net-flow matrix into gradient (global ranking), curl (local circular exchange), and harmonic (global cycle) components, where the curl magnitude is validated against JCR suppression ground truth [1, 2]. HLSAD does not target citation networks, does not use JCR labeled ground truth, and is not designed for citation integrity assessment.\n\n### Ready-to-Use Related Work Paragraph\n\n'HLSAD (Frantzen & Schaub, KDD 2025) applies the spectral properties of Hodge Laplacians of multiple orders to detect structural change-points and events in time-evolving simplicial complexes [1]. For each temporal snapshot, HLSAD extracts principal singular values from both up and down Hodge Laplacians, concatenates them into a feature vector, and flags anomalies when the angular deviation from a sliding-window SVD baseline exceeds a threshold. Our work, by contrast, applies a single-pass static Hodge–Helmholtz decomposition of a cumulative net-flow matrix on the journal citation graph, decomposing flow into orthogonal gradient, curl, and harmonic components. The curl magnitude directly quantifies citation-ring activity against a labeled ground truth from JCR suppression lists, targeting citation integrity on static cumulative data rather than general temporal change-point detection in evolving higher-order networks.'\n\n---\n\n## PART 2 — JCR Suppression-Type Annotations (2018–2025)\n\n### Critical Annotation Rules\n\n- 2020: CONFIRMED zero stacking — all 33 suppressions were self-citation violations; none were stacking [10, 11]. Exclude entirely from stacking-positive class.\n- 2019: 17 journals suppressed; stacking journal names not found in secondary literature; exclude from validated positive class [14].\n- 2021 CORRECTION: 4 stacking journals (not 3 as in prior dependency) — Hellenic Journal of Cardiology is stacking, not self-citation [9].\n- Oncotarget: self-citation removal in 2017, predates this window; classify as self_citation if included.\n- Bone Research: victim of stacking distortion, NOT a suppressed journal itself.\n\n### 2025 JCR: 20 journals (4 stacking + 16 self-citation) [5]\n\nStacking (4): Applied Organometallic Chemistry (Wiley), Asian Journal of Agriculture and Biology, Chemical Methodologies, Genetic Resources and Crop Evolution (Springer).\nSelf-citation (16): Advances and Applications in Discrete Mathematics, Annals of Phytomedicine-An International Journal, Clinical Hemorheology and Microcirculation, Indian Journal of Biochemistry & Biophysics, Jordan Journal of Mechanical and Industrial Engineering, Journal of Earthquake and Tsunami, Journal of Mind and Medical Sciences, Lobachevskii Journal of Mathematics, Mechanics of Advanced Materials and Structures, Media Education (Mediaobrazovanie), Punjab University Journal of Mathematics, Russian Chemical Bulletin, Russian Journal of Physical Chemistry B, TeMA, Transactions of FAMENA, Vestnik St. Petersburg University Mathematics.\n\n### 2024 JCR: 17 journals (11 stacking + 6 self-citation) — largest stacking cohort [6, 7]\n\nStacking (11): Annals of Financial Economics; Climate Change Economics (mutual pair with Environmental Science & Pollution Research); Environmental Science & Pollution Research; Cuadernos de Economia; Gazzetta Medica Italiana Archivio per le Scienze Mediche; Granular Computing (ed: Witold Pedrycz); Information Sciences (ed: Witold Pedrycz); Minerva Medica; Panminerva Medica; Resources Policy (stacked with 2 small unnamed journals); Ukrainian Journal of Physical Optics (46% of citations from Optik) [7].\nSelf-citation (6): Activities Adaptation & Aging, Engineering Technology & Applied Science Research, Exploratory Animal and Medical Research, Library Hi Tech, Regional Statistics, SOCAR Proceedings.\n\n### 2023 JCR: 4 journals (3 stacking + 1 self-citation) [8]\n\nStacking (3): Genetika (Serbian Genetics Society — 22 Bioscience Research papers cited Genetika in 2022); Bioscience Research; Bioinspired Biomimetic and Nanobiomaterials (ICE Publishing — isolated case, single paper cited by two delisted journals).\nSelf-citation (1): Marketing Theory (SAGE).\n\n### 2022 JCR: No suppressions documented [8]\n\nNo data found in any source. Likely no suppressions occurred in 2022.\n\n### 2021 JCR: 10 journals (4 stacking + 6 self-citation) — CORRECTED [9]\n\nStacking (4): Archivos Latinoamericanos de Nutrition; Journal of Intelligent & Fuzzy Systems; Materials Express; Hellenic Journal of Cardiology. NOTE: prior dependency artifact said 3 stacking — this is incorrect; Hellenic Journal of Cardiology is stacking [9].\nSelf-citation (6): International Journal of Engine Research, Journal of Enhanced Heat Transfer, Journal of Family and Economic Issues, Mechanics-Based Design of Structures and Machines, Journal of Biomolecular Structure and Dynamics, Liquid Crystals.\n\n### 2020 JCR: 33 journals (0 stacking + 33 self-citation) [10, 11]\n\nZERO stacking — confirmed by Retraction Watch: 'none of the suppressions or expressions of concern this year were for citation stacking' [10]. Named examples: Body Image (Elsevier, 50.4% self-citation rate), IJSEM (Microbiology Society), Zootaxa, International Journal of Medicinal Mushrooms, Journal of Environmental and Engineering Geophysics (71% self-citation), Forensic Science International: Genetics [10, 11]. Publisher breakdown: 9 Elsevier, 7 Springer Nature, 6 Taylor & Francis, 5 Wiley [11].\n\n### 2019 JCR: 17 journals — stacking names UNKNOWN [14]\n\n17 journals suppressed; approximately 3–4 stacking based on historical trend [4]; 4 were carry-overs from 2018 distortions [14]. Specific stacking names not reported in any secondary literature found. Exclude all 2019 journals from the validated stacking-positive class.\n\n### 2018 JCR: 20 journals (6 stacking + 14 self-citation) [12]\n\nStacking (5 confirmed, 1 unnamed): European Journal of the History of Economic Thought (mutual pair with JHET); Journal of the History of Economic Thought (mutual pair with EJEHT); Liver Cancer (received 40% of JIF citations from Digestive Diseases and 23% from Oncology); Digestive Diseases (donor to Liver Cancer); Oncology (donor to Liver Cancer); [1 unnamed: Scholarly Kitchen listed 6 stacking journals but only 5 unique names are confirmed from accessible text] [12].\nSelf-citation (14): Aquaculture Economics & Management, Archives of Budo, Canadian Historical Review, Chinese Journal of International Law, Chinese Journal of Mechanical Engineering, Eurasia Journal of Mathematics Science and Technology Education, International Journal of American Linguistics, International Journal of Applied Mechanics, International Journal of Civil Engineering, Journal of Micropalaeontology, Journal of Voice, Maritime Policy & Management, Pediatric Dentistry, Psychoanalytic Quarterly.\n\n### Summary Counts\n\nTotal confirmed stacking journals by name: 32 (across 2018–2025, excluding the 1 unnamed 2018 journal and all unknown 2019 journals). These are the recommended positive class for the experiment. Total self-citation journals documented: approximately 73 named plus 27 unnamed 2020 journals.\n\nAccording to the CIDRE paper, since 2007 JCR has suppressed 227 journals total: 173 for self-citation, 55 for stacking, 1 for both [4].\n\n---\n\n## PART 3 — Concurrent Work Scan\n\n### CDFD: Circular Directional Flow Decomposition [13]\n\nHoms-Dones et al. (arXiv:2506.12546, June 2025) decompose directed weighted flow as w = c + d (circular + acyclic) and define circularity index CI = Σc/Σw ∈ [0,1]. The BFF algorithm (iterative sink removal + maximal invariant, polynomial time) computes the decomposition. Critical distinction: CDFD captures ALL circular flows including cycles longer than triangles, whereas HodgeRank curl only captures triangular cycles [13]. This concurrent work must be cited in the paper and explicitly compared against the Hodge curl metric on the same stacking-labeled dataset.\n\n### CIDRE (Primary Prior Work) [3, 4]\n\nKojaku, Livan, and Masuda (Scientific Reports 2021, arXiv:2009.09097) detect anomalous citation groups via a degree-corrected stochastic block model (dcSBM) null model with Poisson p-values and BH-FDR at α=0.01 [3, 4]. Applied to 48,821 journals from 2013 Microsoft Academic Graph data; detects more than half of the JCR-suppressed stacking journals [4]. Methodologically distinct from flow decomposition: CIDRE uses statistical community anomaly detection rather than algebraic gradient/curl/harmonic decomposition. Primary baseline to compare against.\n\n### GLAD: Deep Graph Learning for Anomalous Citation Detection [15]\n\nGNN-based paper-level (not journal-level) citation anomaly detection with a CPU algorithm for citation purpose identification [15]. Different granularity, requires citation text content, validated on a simulated dataset.\n\n### Unsupervised Anomaly Detection in Journal-Level Citation Networks (JCDL 2020) [16]\n\nUnsupervised journal-level citation anomaly detection without labeled ground truth [16]. No Hodge decomposition or flow analysis.\n\n### HLSAD Citing Papers\n\nNo citing papers of arXiv:2505.24534 that apply Hodge decomposition to citation networks were found in the search. The intersection of Hodge methods and citation integrity remains unoccupied in the literature outside the present work.",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://arxiv.org/abs/2505.24534",
+      "title": "HLSAD: Hodge Laplacian-based Simplicial Anomaly Detection (abstract page)",
+      "summary": "Confirmed temporal nature, higher-order simplicial complex focus, KDD 2025 venue, full abstract text extracted"
+    },
+    {
+      "index": 2,
+      "url": "https://arxiv.org/pdf/2505.24534",
+      "title": "HLSAD full PDF (Frantzen & Schaub, KDD 2025)",
+      "summary": "Complete methodology confirmed: multi-order Hodge Laplacians, SVD-based sliding window anomaly score with angular deviation, boundary operator B1, UCI Online Message and US Senate datasets (Hits@N=1.0), dual window w_s=5/w_l=10, computational complexity O(T*sum(n_k^2)*log(ell)), synthetic experiments (Hybrid/Resampled/Large/Triangle Closing)"
+    },
+    {
+      "index": 3,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8282695/",
+      "title": "CIDRE: Detecting anomalous citation groups in journal networks (PMC full text)",
+      "summary": "CIDRE method details; case study journal groups 1-14; 46 stacking pairs / 55 journals total suppressed up to 2019; 22 merged stacking groups J1-J22"
+    },
+    {
+      "index": 4,
+      "url": "https://arxiv.org/pdf/2009.09097",
+      "title": "CIDRE arXiv PDF (Kojaku, Livan, Masuda 2021)",
+      "summary": "Since 2007: 227 total JCR suppressions (173 self-citation, 55 stacking, 1 both); CIDRE detects 12 of 22 stacking groups; uses 48,821 journals from 2013 MAG data; dcSBM null model; detects >50% of JCR-suppressed stacking journals"
+    },
+    {
+      "index": 5,
+      "url": "https://retractionwatch.com/2025/06/18/clarivate-impact-factor-suppression-list-2025-self-citation-stacking/",
+      "title": "Retraction Watch: 2025 JCR suppression list (20 journals)",
+      "summary": "Complete 2025 list: 4 stacking (Applied Organometallic Chemistry, Asian Journal of Agriculture and Biology, Chemical Methodologies, Genetic Resources and Crop Evolution) + 16 self-citation named"
+    },
+    {
+      "index": 6,
+      "url": "https://blog.wos-journal.info/title-suppressions-journals-suppressed-from-2023-jcr-data-2024-release/",
+      "title": "WoS Journal blog: 2024 JCR suppression list (17 journals, 2023 data)",
+      "summary": "Complete 2024 list: 11 stacking + 6 self-citation; all 11 stacking journal names confirmed"
+    },
+    {
+      "index": 7,
+      "url": "https://retractionwatch.com/2024/06/27/seventeen-journals-lose-impact-factors-for-suspected-citation-manipulation/",
+      "title": "Retraction Watch: 2024 JCR suppression (17 journals)",
+      "summary": "Confirmed Ukrainian Journal of Physical Optics (46% citations from Optik), Granular Computing / Information Sciences (Pedrycz), Resources Policy stacking pair; additional context on 2024 stacking cases"
+    },
+    {
+      "index": 8,
+      "url": "https://retractionwatch.com/2023/06/28/truly-devastating-four-journals-wont-get-new-impact-factors-this-year-because-of-citation-shenanigans/",
+      "title": "Retraction Watch: 2023 JCR suppression (4 journals)",
+      "summary": "Complete 2023 list: Marketing Theory (self-citation), Genetika + Bioscience Research + Bioinspired Biomimetic and Nanobiomaterials (stacking). No 2022 suppressions found."
+    },
+    {
+      "index": 9,
+      "url": "https://retractionwatch.com/2021/06/30/ten-journals-denied-2020-impact-factors-because-of-excessive-self-citation-or-citation-stacking/",
+      "title": "Retraction Watch: 2021 JCR suppression (10 journals)",
+      "summary": "Complete 2021 list: 4 stacking (Archivos Latinoamericanos, J Intelligent & Fuzzy Systems, Materials Express, Hellenic Journal of Cardiology) + 6 self-citation. Corrects prior artifact's claim of only 3 stacking."
+    },
+    {
+      "index": 10,
+      "url": "https://retractionwatch.com/2020/06/29/major-indexing-service-sounds-alarm-on-self-citations-by-nearly-50-journals/",
+      "title": "Retraction Watch: 2020 JCR suppression (33 journals, 0 stacking)",
+      "summary": "CONFIRMED zero stacking in 2020; all 33 were self-citation. Named: IJSEM, Zootaxa, Body Image, International Journal of Medicinal Mushrooms, Journal of Environmental and Engineering Geophysics, Forensic Science International: Genetics"
+    },
+    {
+      "index": 11,
+      "url": "https://www.enago.com/academy/journals-suppressed-in-the-journal-citation-reports-fight-back/",
+      "title": "Enago Academy: 2020 JCR suppression details",
+      "summary": "Publisher breakdown for the 33: 9 Elsevier, 7 Springer Nature, 6 Taylor & Francis, 5 Wiley. Body Image (50.4% self-citation rate) and IJSEM details confirmed."
+    },
+    {
+      "index": 12,
+      "url": "https://scholarlykitchen.sspnet.org/2018/06/27/impact-factor-denied-20-journals-self-citation-stacking/",
+      "title": "Scholarly Kitchen: 2018 JCR suppression (20 journals)",
+      "summary": "Complete 2018 list: 14 self-citation + 6 stacking. Stacking table: Liver Cancer/Digestive Diseases (40% JIF), Liver Cancer/Oncology (23% JIF), EJEHT/JHET mutual pair. 6th stacking journal not named (site returned 403 on direct access)."
+    },
+    {
+      "index": 13,
+      "url": "https://arxiv.org/abs/2506.12546",
+      "title": "CDFD: Circular Directional Flow Decomposition (Homs-Dones et al., 2025)",
+      "summary": "Concurrent work: w=c+d decomposition (circular + acyclic); CI=sum(c)/sum(w) in [0,1]; BFF algorithm; captures ALL circular flows including cycles longer than triangles — distinct from and complementary to Hodge triangular curl"
+    },
+    {
+      "index": 14,
+      "url": "https://clarivate.com/academia-government/blog/announcing-the-2019-journal-citation-reports/",
+      "title": "Clarivate: 2019 JCR announcement",
+      "summary": "17 journals suppressed from 2019 JCR; no specific names or stacking vs. self-citation breakdown provided"
+    },
+    {
+      "index": 15,
+      "url": "https://arxiv.org/abs/2202.11360",
+      "title": "GLAD: Deep Graph Learning for Anomalous Citation Detection",
+      "summary": "GNN-based paper-level citation anomaly detection with CPU algorithm for citation purpose; different granularity and method from journal-level Hodge flow decomposition"
+    },
+    {
+      "index": 16,
+      "url": "https://arxiv.org/abs/2005.14343",
+      "title": "Unsupervised Anomaly Detection in Journal-Level Citation Networks (JCDL 2020)",
+      "summary": "Unsupervised journal-level citation anomaly detection; no Hodge decomposition; no labeled JCR ground truth; earlier related work in the same domain"
+    }
+  ],
+  "follow_up_questions": [
+    "Can the CIDRE edge-table-2013.csv and journal_names.csv files be cross-referenced with OpenAlex journal IDs to map which confirmed stacking journals from 2018-2025 were already visible as anomalous in the 2013 MAG snapshot, establishing whether the Hodge curl signal is detectable in pre-suppression citation data?",
+    "For the 2019 JCR suppressed journals (17 total, stacking names unknown): the CIDRE paper references 46 donor-recipient stacking pairs and 22 merged groups (J1-J22) up to 2019 — are the specific journal names in those groups available in the CIDRE GitHub data files or in the full JCR platform, which could resolve the 2019 identification gap?",
+    "The CDFD paper (arXiv:2506.12546) captures ALL circular flows including cycles longer than triangles while HodgeRank curl is restricted to triangular cycles — should both metrics be computed on the same stacking-labeled journal set to empirically determine whether longer-cycle circularity is more discriminative than triangular Hodge curl for detecting citation cartels?"
+  ]
+}

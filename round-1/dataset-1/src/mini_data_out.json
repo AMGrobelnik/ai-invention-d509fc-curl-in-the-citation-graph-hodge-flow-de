@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "source": "OpenAlex API (2015-2022) + Clarivate JCR suppressed title lists",
+    "task": "Binary node classification: given a directed journal×journal citation pair, predict whether the source journal was suppressed by Clarivate JCR for citation manipulation. Designed for Hodge decomposition feature extraction on citation networks.",
+    "label_description": "label=1: journal suppressed by Clarivate JCR 2018-2022 for citation stacking or excessive self-citation; label=0: not suppressed",
+    "n_journals": 231,
+    "n_suppressed_journals": 40,
+    "n_citation_pairs": 15188,
+    "graph_edges": 15188,
+    "year_window": "2015-2022",
+    "suppression_rate": 0.1732
+  },
+  "datasets": [
+    {
+      "dataset": "openalex_journal_citation_network_jcr_suppression",
+      "examples": [
+        {
+          "input": "Journal citation pair (2015-2022): [Sustainability] cites [Sensors] 53 times; [Sensors] cites [Sustainability] 30 times; net flow (Sustainability→Sensors) = 23. Journal [Sustainability] field: unknown; works in period: 107084. Task: classify whether [Sustainability] was suppressed by Clarivate JCR for citation manipulation (stacking or excessive self-citation) during 2018-2022.",
+          "output": "1",
+          "metadata_source_id_i": "https://openalex.org/S10134376",
+          "metadata_source_id_j": "https://openalex.org/S101949793",
+          "metadata_journal_name_i": "Sustainability",
+          "metadata_journal_name_j": "Sensors",
+          "metadata_citation_count_ij": 53,
+          "metadata_citation_count_ji": 30,
+          "metadata_net_flow_ij": 23,
+          "metadata_year_window": "2015-2022",
+          "metadata_label_i": 1,
+          "metadata_label_j": 1,
+          "metadata_works_count_i": 107084,
+          "metadata_field_i": "",
+          "metadata_task_type": "binary_classification",
+          "metadata_row_index": 0
+        },
+        {
+          "input": "Journal citation pair (2015-2022): [Sustainability] cites [Nature Materials] 3 times; [Nature Materials] cites [Sustainability] 0 times; net flow (Sustainability→Nature Materials) = 3. Journal [Sustainability] field: unknown; works in period: 107084. Task: classify whether [Sustainability] was suppressed by Clarivate JCR for citation manipulation (stacking or excessive self-citation) during 2018-2022.",
+          "output": "1",
+          "metadata_source_id_i": "https://openalex.org/S10134376",
+          "metadata_source_id_j": "https://openalex.org/S103895331",
+          "metadata_journal_name_i": "Sustainability",
+          "metadata_journal_name_j": "Nature Materials",
+          "metadata_citation_count_ij": 3,
+          "metadata_citation_count_ji": 0,
+          "metadata_net_flow_ij": 3,
+          "metadata_year_window": "2015-2022",
+          "metadata_label_i": 1,
+          "metadata_label_j": 0,
+          "metadata_works_count_i": 107084,
+          "metadata_field_i": "",
+          "metadata_task_type": "binary_classification",
+          "metadata_row_index": 1
+        },
+        {
+          "input": "Journal citation pair (2015-2022): [Sustainability] cites [Biochemistry] 1 times; [Biochemistry] cites [Sustainability] 0 times; net flow (Sustainability→Biochemistry) = 1. Journal [Sustainability] field: unknown; works in period: 107084. Task: classify whether [Sustainability] was suppressed by Clarivate JCR for citation manipulation (stacking or excessive self-citation) during 2018-2022.",
+          "output": "1",
+          "metadata_source_id_i": "https://openalex.org/S10134376",
+          "metadata_source_id_j": "https://openalex.org/S104038378",
+          "metadata_journal_name_i": "Sustainability",
+          "metadata_journal_name_j": "Biochemistry",
+          "metadata_citation_count_ij": 1,
+          "metadata_citation_count_ji": 0,
+          "metadata_net_flow_ij": 1,
+          "metadata_year_window": "2015-2022",
+          "metadata_label_i": 1,
+          "metadata_label_j": 0,
+          "metadata_works_count_i": 107084,
+          "metadata_field_i": "",
+          "metadata_task_type": "binary_classification",
+          "metadata_row_index": 2
+        }
+      ]
+    }
+  ]
+}

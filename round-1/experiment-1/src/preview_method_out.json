@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "method_name": "Hodge-Curl Cartel Detector",
+    "description": "Combinatorial Hodge decomposition of journal citation net-flows. The curl component detects cyclic citation patterns inconsistent with any global prestige ordering, revealing citation cartel rings.",
+    "is_synthetic_network": true,
+    "n_journals": 784,
+    "n_triangles": 7840,
+    "years": "2019-2020",
+    "edge_threshold": 3,
+    "n_null_samples": 100,
+    "hodge_energy_fractions": {
+      "gradient": 0.11664071270193335,
+      "curl": 0.7063973375751419,
+      "harmonic": 0.1769619497169589
+    },
+    "evaluation_label": "citation_stacking",
+    "n_positives": 30,
+    "hodge_curl_auc_roc": 0.7619805481874448,
+    "cidre_auc_roc": 0.6259062776304155,
+    "delta_auc_hodge_minus_cidre": 0.13607427055702925,
+    "p_value_comparison": 0.097,
+    "n_injection_conditions": 56,
+    "confound_mannwhitney_curl_p": 0.0026692621712387453,
+    "partial_corr_curl": 0.153063363714443
+  },
+  "datasets": [
+    {
+      "dataset": "synthetic_citation_network",
+      "examples": [
+        {
+          "input": "Journal: Journal_0000_Biology. ISSN: 1000-0000. Field: Biology. Total citations: 51. HodgeRank prestige: 1.4263. Hodge curl z-score: -0.6247. Hodge gradient residual: 3.2006. Null p-value: 0.7200. CID...",
+          "output": "not_suppressed",
+          "predict_hodge_curl_z": "-0.624694",
+          "predict_hodge_curl_raw": "8.555556",
+          "predict_hodge_curl_norm": "2.134975",
+          "predict_hodge_grad_residual": "3.200602",
+          "predict_cidre": "48.037037",
+          "predict_reciprocity": "0.135135",
+          "predict_within_group_density": "0.586612",
+          "predict_pagerank": "0.00075856",
+          "metadata_journal_name": "Journal_0000_Biology",
+          "metadata_issn_l": "1000-0000",
+          "metadata_field": "Biology",
+          "metadata_prestige_score": "1.426314",
+          "metadata_null_p_value": "0.720000",
+          "metadata_n_triangles": "9"
+        },
+        {
+          "input": "Journal: Journal_0001_Biology. ISSN: 1000-0001. Field: Biology. Total citations: 145. HodgeRank prestige: -0.1266. Hodge curl z-score: 1.9034. Hodge gradient residual: 6.7305. Null p-value: 0.0200. CI...",
+          "output": "not_suppressed",
+          "predict_hodge_curl_z": "1.903433",
+          "predict_hodge_curl_raw": "14.500000",
+          "predict_hodge_curl_norm": "2.557373",
+          "predict_hodge_grad_residual": "6.730472",
+          "predict_cidre": "20.752000",
+          "predict_reciprocity": "0.222222",
+          "predict_within_group_density": "0.586612",
+          "predict_pagerank": "0.00337036",
+          "metadata_journal_name": "Journal_0001_Biology",
+          "metadata_issn_l": "1000-0001",
+          "metadata_field": "Biology",
+          "metadata_prestige_score": "-0.126552",
+          "metadata_null_p_value": "0.020000",
+          "metadata_n_triangles": "28"
+        },
+        {
+          "input": "Journal: Journal_0002_Biology. ISSN: 1000-0002. Field: Biology. Total citations: 91. HodgeRank prestige: 0.5694. Hodge curl z-score: 0.7140. Hodge gradient residual: 4.9467. Null p-value: 0.1900. CIDR...",
+          "output": "not_suppressed",
+          "predict_hodge_curl_z": "0.714028",
+          "predict_hodge_curl_raw": "11.704545",
+          "predict_hodge_curl_norm": "2.345397",
+          "predict_hodge_grad_residual": "4.946683",
+          "predict_cidre": "6.737662",
+          "predict_reciprocity": "0.225490",
+          "predict_within_group_density": "0.586612",
+          "predict_pagerank": "0.00184219",
+          "metadata_journal_name": "Journal_0002_Biology",
+          "metadata_issn_l": "1000-0002",
+          "metadata_field": "Biology",
+          "metadata_prestige_score": "0.569377",
+          "metadata_null_p_value": "0.190000",
+          "metadata_n_triangles": "44"
+        }
+      ]
+    }
+  ]
+}

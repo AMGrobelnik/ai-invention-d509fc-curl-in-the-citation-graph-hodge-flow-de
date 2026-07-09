@@ -1,0 +1,90 @@
+{
+  "title": "Hodge Decomposition & Citation Cartel Detection: Technical Specifications",
+  "summary": "Retrieved exact specifications for five components of a Hodge-decomposition citation-cartel detector: (1) HodgeRank sparse least-squares system and curl extraction formulas from the 2011 Jiang-Lim-Yao-Ye paper; (2) CIDRE algorithm API, dcSBM null model formulas, and bundled journal-citation CSV dataset (48,821 journals, MAG 2013); (3) CDFD 2025 paper circularity index and BFF algorithm pseudocode, plus HHK 2024 finance application; (4) Clarivate JCR suppression lists 2018–2025 with named journals and stacking vs. self-citation breakdown; (5) OpenAlex API pagination pattern, S3 snapshot structure, and CLI approach for building a journal-level citation matrix.",
+  "answer": "This research collected precise technical specifications across five domains needed to implement a Hodge-decomposition-based citation-cartel detector. (A) HodgeRank [1] decomposes a journal-level net-flow matrix Y (Y_ij = W_ij − W_ji, citations from i to j minus reverse) into three orthogonal components via sparse linear algebra: gradient Y_grad = B₁ᵀ s (solved by scipy.sparse.linalg.lsqr on the singular graph Laplacian L₀ = B₁B₁ᵀ), curl Y_curl (triangular inconsistency, extracted via a second coboundary operator B₂), and harmonic Y_harmonic (global cycles, remainder). The triangle-level curl formula (curl X)(i,j,k) = X_ij + X_jk + X_ki is the direct mathematical signature of a three-journal citation ring. (B) CIDRE [2,3] is an open Python package (pip install cidre) that detects anomalous citation groups using a degree-corrected SBM null model: expected weight λ_ij = (s_i^out · s_j^in · Λ_{g_i,g_j}) / (S_{g_i}^out · S_{g_j}^in), with Poisson p-values and Benjamini-Hochberg FDR at α=0.01. Its bundled data file data/journal-citation/edge-table-2013.csv (columns: src, trg, weight; MAG numeric IDs) is the easiest ready-made citation matrix for prototyping, covering 48,821 journals. CIDRE's API accepts scipy.sparse CSR or NetworkX DiGraph and returns Group objects with donor/recipient scores. (C) The 2025 CDFD paper [4] introduces an alternative decomposition w = c + d (circular + acyclic components, with 0 ≤ c_ij ≤ w_ij) and a circularity index CI = Σc_ij / Σw_ij capturing ALL circular flow (unlike HodgeRank curl, which only captures triangle-local cycles); the BFF algorithm iteratively removes sinks and extracts the maximal invariant in polynomial time. The 2024 HHK paper [5] applies the same Hodge decomposition to Granger causality financial networks, confirming the linear-algebra approach scales to dense graphs via lsqr. (D) Clarivate JCR suppression lists from 2018–2025 yield approximately 100+ unique suppressed journals [6,7,8,9,10,11]; the 2025 list (20 journals, 4 stacking + 16 self-citation) and 2024 list (17 journals) are fully named; 2021 has 10 named journals including three citation-stacking cases (Archivos Latinoamericanos de Nutrition, Journal of Intelligent & Fuzzy Systems, Materials Express); 2023 has 4 journals (Marketing Theory [self], Genetika, Bioscience Research, Bioinspired-Biomimetic-Nanobiomaterials [all stacking]). For Hodge validation, the stacking-suppressed journals (coordinated mutual inflation) are the primary positive class, as they directly create curl triangles. (E) OpenAlex API [12,13] requires an API key (free, $1/day allowance); works are retrieved with cursor-based pagination via GET /works?filter=primary_location.source.id:SA&select=id,referenced_works&per-page=200&cursor=*; for large-scale matrix construction the S3 snapshot at s3://openalex/data/jsonl/works/ (~330 GB gzip, ~1.6 TB uncompressed, quarterly free refresh) is far more efficient than the API; the OpenAlex CLI (pip install openalex-official) allows filtered subset downloads; for prototyping, CIDRE's bundled 2013 data requires no API calls at all.",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://web.stanford.edu/~yyye/hodgeRank2011.pdf",
+      "title": "Statistical Ranking and Combinatorial Hodge Theory (Jiang, Lim, Yao, Ye, 2011)",
+      "summary": "Primary source for HodgeRank. Provides exact definitions of coboundary operators B₁ and B₂, the gradient/curl/harmonic decomposition, the least-squares system (L₀s = B₁Y), the curl formula (curl X)(i,j,k) = X_ij + X_jk + X_ki, and the Hodge decomposition theorem proving orthogonality. PDF successfully fetched and extensively grepped."
+    },
+    {
+      "index": 2,
+      "url": "https://arxiv.org/abs/2009.09097",
+      "title": "Detecting anomalous citation groups in journal networks (Kojaku, Livan, Masuda, 2021)",
+      "summary": "CIDRE algorithm paper. Published in Scientific Reports 11:14524. Confirms the algorithm detects >50% of JCR-suppressed journals at year of suspension or in advance. Describes the dcSBM null model, donor/recipient scoring, and the MAG dataset (48,821 journals, 2000-2019)."
+    },
+    {
+      "index": 3,
+      "url": "https://github.com/skojaku/cidre",
+      "title": "CIDRE GitHub Repository",
+      "summary": "Complete API documentation for the CIDRE Python package. Confirmed install command (pip install cidre), API usage (cidre.Cidre(group_membership).detect(A, threshold=0.15)), input format (scipy CSR or nx.Graph), and output (Group objects with .donors and .recipients dicts). Also confirmed data file format: edge-table-2013.csv with columns src,trg,weight."
+    },
+    {
+      "index": 4,
+      "url": "https://arxiv.org/abs/2506.12546",
+      "title": "Circular Directional Flow Decomposition of Networks (Homs-Dones, MacKay, Sansom, Zhou, 2025)",
+      "summary": "Introduces CDFD: w = c + d decomposition with CI = Σc/Σw. Two benchmarks: Maximum Circularity (minimum cost flow, O((m log n)(m + n log n))) and BFF algorithm (iterative sink removal + maximal invariant extraction, polynomial time). PDF and HTML version both fetched; BFF pseudocode (Algorithm 1) extracted verbatim."
+    },
+    {
+      "index": 5,
+      "url": "https://arxiv.org/abs/2408.12839",
+      "title": "Causal Hierarchy in the Financial Market Network — Uncovered by the HHK Decomposition (Wand, Kamps, Iyetomi, 2024)",
+      "summary": "Applies Helmholtz-Hodge-Kodaira decomposition (mathematically equivalent to HodgeRank) to Granger causality financial networks. Splits into gradient (hierarchy) and rotational (cyclic) components. Confirms the lsqr-based approach scales to dense graphs. Used for COVID-19 crisis analysis."
+    },
+    {
+      "index": 6,
+      "url": "https://retractionwatch.com/2025/06/18/clarivate-impact-factor-suppression-list-2025-self-citation-stacking/",
+      "title": "Citation issues cost these 20 journals their impact factors this year (Retraction Watch, June 2025)",
+      "summary": "Complete named list of all 20 journals suppressed in the 2025 JCR: 4 for citation stacking (Applied Organometallic Chemistry/Wiley, Asian Journal of Agriculture and Biology, Chemical Methodologies, Genetic Resources and Crop Evolution/Springer) and 16 for self-citation. Publishers include MDPI, Sage, Springer, Taylor & Francis, Wiley."
+    },
+    {
+      "index": 7,
+      "url": "https://retractionwatch.com/2024/06/27/seventeen-journals-lose-impact-factors-for-suspected-citation-manipulation/",
+      "title": "Seventeen journals lose impact factors for suspected citation manipulation (Retraction Watch, June 2024)",
+      "summary": "Named list of 17 suppressed journals in 2024 JCR, including key stacking cartels: Climate Change Economics and Environmental Science & Pollution Research (stacking pair), Resources Policy and Cuadernos De Economía (Elsevier stacking), Ukrainian Journal for Physical Optics (46% citations from Optik). Also includes Granular Computing, Information Sciences, Library Hi Tech, and others."
+    },
+    {
+      "index": 8,
+      "url": "https://retractionwatch.com/2023/06/28/truly-devastating-four-journals-wont-get-new-impact-factors-this-year-because-of-citation-shenanigans/",
+      "title": "Four journals won't get new Impact Factors this year because of citation shenanigans (Retraction Watch, June 2023)",
+      "summary": "Named all 4 suppressed journals in 2023 JCR: Marketing Theory (SAGE, self-citation) plus Genetika (Serbian Genetics Society), Bioscience Research (ISISN), and Bioinspired, Biomimetic, and Nanobiomaterials (ICE Publishing) — all three for citation stacking."
+    },
+    {
+      "index": 9,
+      "url": "https://retractionwatch.com/2021/06/30/ten-journals-denied-2020-impact-factors-because-of-excessive-self-citation-or-citation-stacking/",
+      "title": "Ten journals denied 2020 Impact Factors because of excessive self-citation or citation stacking (Retraction Watch, June 2021)",
+      "summary": "Named all 10 suppressed journals in 2021 JCR: 3 for stacking (Archivos Latinoamericanos de Nutrition, Journal of Intelligent & Fuzzy Systems, Materials Express) and 7 for self-citation. Plus 11 journals with expressions of concern."
+    },
+    {
+      "index": 10,
+      "url": "https://retractionwatch.com/2020/06/29/major-indexing-service-sounds-alarm-on-self-citations-by-nearly-50-journals/",
+      "title": "Major indexing service sounds alarm on self-citations by nearly 50 journals (Retraction Watch, June 2020)",
+      "summary": "2020 JCR suppressions: 33 journals suppressed, 15 expressions of concern — all for self-citation only (no citation stacking that year). Major publishers: 9 Elsevier, 7 Springer Nature, 6 Taylor & Francis, 5 Wiley. One journal had >70% self-citation rate."
+    },
+    {
+      "index": 11,
+      "url": "https://scholarlykitchen.sspnet.org/2018/06/27/impact-factor-denied-20-journals-self-citation-stacking/",
+      "title": "Impact Factor Denied to 20 Journals For Self-Citation, Stacking (Scholarly Kitchen, June 2018)",
+      "summary": "Confirmed 2018 suppression stats from search snippet: 20 journals, 14 self-citation, 6 citation stacking. Full page returned 403 (access denied); content confirmed via search result snippet."
+    },
+    {
+      "index": 12,
+      "url": "https://developers.openalex.org/api-reference/sources/list-sources",
+      "title": "OpenAlex API — List Sources endpoint",
+      "summary": "Confirmed API endpoint GET /sources with filter, sort, per-page, cursor parameters. Response structure includes source id (e.g., S1983995261), issn_l, works_count, cited_by_count, counts_by_year, and works_api_url for drilling down. API key required (free at openalex.org/settings/api)."
+    },
+    {
+      "index": 13,
+      "url": "https://developers.openalex.org/download/snapshot-format",
+      "title": "OpenAlex Snapshot Data Format",
+      "summary": "S3 bucket structure confirmed: s3://openalex/data/jsonl/works/updated_date=YYYY-MM-DD/part_NNNN.gz. Size: ~330 GB gzip compressed, ~1.6 TB decompressed. Also Parquet format available. Quarterly refresh (free); daily (paid). Works include referenced_works and primary_location.source.id fields needed to build citation matrix."
+    }
+  ],
+  "follow_up_questions": [
+    "Does HodgeRank's curl component on the full journal citation graph (all ~48K journals) reliably rank known citation-stacking cartels higher than known self-citation journals, or does the global harmonic component dominate in practice — making the per-triangle curl a better detector than the aggregate curl energy fraction?",
+    "Is the CIDRE bundled edge-table-2013.csv (MAG journal IDs) large enough and representative enough for a meaningful Hodge decomposition, and does the year 2013 pre-date most of the documented cartel behavior (2018+), making it unsuitable for validation against the JCR suppression lists?",
+    "Can the CDFD circularity index CI on a suspected journal subgraph serve as a continuous group-level score that outperforms CIDRE's binary donor/recipient detection — and specifically, what null distribution (random same-size subgraph CI, or community-corrected) best calibrates the significance threshold?"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "legit_clusters": [
+    {
+      "density": 0.7867063492063296,
+      "curl_per_triangle": 12.508448540704682,
+      "internal_curl_total": 8143.0,
+      "n_triangles": 651,
+      "n_members": 64,
+      "mean_reciprocity": 0.13628851780312506
+    },
+    {
+      "density": 0.6374007936507778,
+      "curl_per_triangle": 11.206261510126849,
+      "internal_curl_total": 6085.0,
+      "n_triangles": 543,
+      "n_members": 64,
+      "mean_reciprocity": 0.13607669229461747
+    },
+    {
+      "density": 0.6229752770673354,
+      "curl_per_triangle": 11.849624060148148,
+      "internal_curl_total": 6304.0,
+      "n_triangles": 532,
+      "n_members": 69,
+      "mean_reciprocity": 0.12637019161961574
+    },
+    {
+      "density": 0.6217757936507782,
+      "curl_per_triangle": 12.527237354083164,
+      "internal_curl_total": 6439.0,
+      "n_triangles": 514,
+      "n_members": 64,
+      "mean_reciprocity": 0.11685012256729402
+    },
+    {
+      "density": 0.5866123925825286,
+      "curl_per_triangle": 14.030303030299761,
+      "internal_curl_total": 6019.0,
+      "n_triangles": 429,
+      "n_members": 67,
+      "mean_reciprocity": 0.13517771214544855
+    }
+  ],
+  "cartel_groups": [
+    {
+      "density": 12.44583333322962,
+      "curl_per_triangle": 110.649999988935,
+      "internal_curl_total": 110.64999999999999,
+      "n_triangles": 1,
+      "n_members": 4,
+      "mean_reciprocity": 0.10979142010905096
+    },
+    {
+      "density": 25.224999999579584,
+      "curl_per_triangle": 112.64999998873499,
+      "internal_curl_total": 112.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.12230831496009126
+    },
+    {
+      "density": 24.724999999587915,
+      "curl_per_triangle": 109.649999989035,
+      "internal_curl_total": 109.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.11134172848987811
+    },
+    {
+      "density": 24.724999999587915,
+      "curl_per_triangle": 109.649999989035,
+      "internal_curl_total": 109.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.11443255450584604
+    },
+    {
+      "density": 24.891666666251805,
+      "curl_per_triangle": 108.649999989135,
+      "internal_curl_total": 108.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.12185942800465872
+    },
+    {
+      "density": 24.724999999587915,
+      "curl_per_triangle": 109.649999989035,
+      "internal_curl_total": 109.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.13828622669344692
+    },
+    {
+      "density": 24.724999999587915,
+      "curl_per_triangle": 109.649999989035,
+      "internal_curl_total": 109.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.12410906102513464
+    },
+    {
+      "density": 24.891666666251805,
+      "curl_per_triangle": 108.649999989135,
+      "internal_curl_total": 108.64999999999999,
+      "n_triangles": 1,
+      "n_members": 3,
+      "mean_reciprocity": 0.15592222060780758
+    },
+    {
+      "density": 10.239999999948802,
+      "curl_per_triangle": 109.649999989035,
+      "internal_curl_total": 109.64999999999999,
+      "n_triangles": 1,
+      "n_members": 5,
+      "mean_reciprocity": 0.13762608382951874
+    }
+  ],
+  "mannwhitney_density_p": 0.0029833592278656154,
+  "mannwhitney_curl_p": 0.0026692621712387453,
+  "partial_corr_curl": 0.153063363714443,
+  "partial_corr_ci": [
+    0.0737903175904134,
+    0.23847380685233666
+  ]
+}

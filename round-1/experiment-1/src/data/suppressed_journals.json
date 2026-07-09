@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Romanian Journal of Legal Medicine",
+    "issn_l": "1222-5975",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Materiale Plastice",
+    "issn_l": "0025-5289",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "REVISTA DE CHIMIE",
+    "issn_l": "0034-7752",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Industria Textila",
+    "issn_l": "1222-5347",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Journal of Environmental Protection and Ecology",
+    "issn_l": "1311-5065",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Textile and Leather Review",
+    "issn_l": "2623-6346",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Ekoloji",
+    "issn_l": "1300-1361",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Journal of International Environmental Application and Science",
+    "issn_l": "1307-0428",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Pakistan Journal of Zoology",
+    "issn_l": "0030-9923",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Journal of Animal and Plant Sciences",
+    "issn_l": "1018-7081",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Fresenius Environmental Bulletin",
+    "issn_l": "1018-4619",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Cellular and Molecular Biology",
+    "issn_l": "0145-5680",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Science of Advanced Materials",
+    "issn_l": "1947-2935",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Journal of Nanoscience and Nanotechnology",
+    "issn_l": "1533-4880",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Open Chemistry",
+    "issn_l": "2391-5420",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Arabian Journal of Chemistry",
+    "issn_l": "1878-5352",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Journal of King Saud University Science",
+    "issn_l": "1018-3647",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Saudi Journal of Biological Sciences",
+    "issn_l": "1319-562X",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Acta Scientiarum Technology",
+    "issn_l": "1806-2563",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Acta Scientiarum Agronomy",
+    "issn_l": "1679-9275",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Semina Ciencias Agrarias",
+    "issn_l": "1676-546X",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Ciencia Rural",
+    "issn_l": "0103-8478",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Bioscience Journal",
+    "issn_l": "1516-3725",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Periodical of Ocean University of China",
+    "issn_l": "1672-5174",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Russian Journal of Marine Biology",
+    "issn_l": "1063-0740",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Journal of the Brazilian Chemical Society",
+    "issn_l": "0103-5053",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Quimica Nova",
+    "issn_l": "0100-4042",
+    "reason": "citation_stacking"
+  },
+  {
+    "name": "Tumor Biology",
+    "issn_l": "1010-4283",
+    "reason": "self_citation"
+  },
+  {
+    "name": "Molecular Diversity",
+    "issn_l": "1381-1991",
+    "reason": "self_citation"
+  },
+  {
+    "name": "Journal of Informetrics",
+    "issn_l": "1751-1577",
+    "reason": "self_citation"
+  },
+  {
+    "name": "Journal of Food Protection",
+    "issn_l": "0362-028X",
+    "reason": "self_citation"
+  }
+]

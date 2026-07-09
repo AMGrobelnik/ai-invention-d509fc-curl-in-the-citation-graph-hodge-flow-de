@@ -1,0 +1,209 @@
+{
+  "phase": 1,
+  "N": 231,
+  "n_stacking": 7,
+  "n_all": 40,
+  "primary_label_name": "stacking_only",
+  "energy_fractions": {
+    "gradient": 0.2300716068108262,
+    "curl": 0.7699283931455518,
+    "harmonic": 4.3593308254265476e-11
+  },
+  "p1_results": {
+    "hodge_grad_residual": {
+      "auc_stacking_only": 0.45408163265306123,
+      "ci_stacking": [
+        0.15197663766025957,
+        0.7522409046214357
+      ],
+      "auc_all_suppressed": 0.11321989528795813,
+      "ci_all": [
+        0.04771162367811715,
+        0.1982552868522256
+      ],
+      "auc_primary": 0.45408163265306123,
+      "ci_primary": [
+        0.15197663766025957,
+        0.7522409046214357
+      ]
+    },
+    "hodge_curl_raw": {
+      "auc_stacking_only": 0.43048469387755106,
+      "ci_stacking": [
+        0.14399074074074072,
+        0.725925925925926
+      ],
+      "auc_all_suppressed": 0.11151832460732987,
+      "ci_all": [
+        0.04774870746206373,
+        0.19501781559045953
+      ],
+      "auc_primary": 0.43048469387755106,
+      "ci_primary": [
+        0.14399074074074072,
+        0.725925925925926
+      ]
+    },
+    "hodge_prestige": {
+      "auc_stacking_only": 0.5510204081632654,
+      "ci_stacking": [
+        0.26277805933491877,
+        0.8125009258898289
+      ],
+      "auc_all_suppressed": 0.5912303664921466,
+      "ci_all": [
+        0.5105906413612565,
+        0.6686074668208938
+      ],
+      "auc_primary": 0.5510204081632654,
+      "ci_primary": [
+        0.26277805933491877,
+        0.8125009258898289
+      ]
+    }
+  },
+  "top20_by_grad_residual": [
+    {
+      "rank": 1,
+      "name": "Journal of the American Chemical Society",
+      "grad_residual": 168.09434050473124,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 2,
+      "name": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D, Particles, fields, gravitation, and cosmology",
+      "grad_residual": 158.983952507378,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 3,
+      "name": "New England Journal of Medicine",
+      "grad_residual": 154.91349439943002,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 4,
+      "name": "Nuclear Physics B",
+      "grad_residual": 146.44223227589268,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 5,
+      "name": "Physics Letters B",
+      "grad_residual": 132.66449539190722,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 6,
+      "name": "Journal of High Energy Physics",
+      "grad_residual": 112.29352508215639,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 7,
+      "name": "Nature",
+      "grad_residual": 107.3140216700554,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 8,
+      "name": "Cell",
+      "grad_residual": 106.62222940415676,
+      "is_suppressed": true,
+      "is_stacking": true
+    },
+    {
+      "rank": 9,
+      "name": "Science",
+      "grad_residual": 104.01464254844961,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 10,
+      "name": "Advanced Materials",
+      "grad_residual": 100.75555565556058,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 11,
+      "name": "Journal of Materials Chemistry A",
+      "grad_residual": 100.26211192149867,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 12,
+      "name": "Advanced Functional Materials",
+      "grad_residual": 99.781360885408,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 13,
+      "name": "Angewandte Chemie International Edition",
+      "grad_residual": 98.60852869337877,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 14,
+      "name": "Applied Catalysis B: Environmental",
+      "grad_residual": 98.51598752688835,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 15,
+      "name": "Chemical Society Reviews",
+      "grad_residual": 91.5629263992121,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 16,
+      "name": "The Astrophysical Journal",
+      "grad_residual": 83.9527918614853,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 17,
+      "name": "Chemical Engineering Journal",
+      "grad_residual": 83.83764475541946,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 18,
+      "name": "Chemical Reviews",
+      "grad_residual": 82.0977128583767,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 19,
+      "name": "Angewandte Chemie",
+      "grad_residual": 81.55017841066349,
+      "is_suppressed": false,
+      "is_stacking": false
+    },
+    {
+      "rank": 20,
+      "name": "Nature Communications",
+      "grad_residual": 69.98823624874751,
+      "is_suppressed": false,
+      "is_stacking": false
+    }
+  ],
+  "T": 230336,
+  "E": 9146
+}

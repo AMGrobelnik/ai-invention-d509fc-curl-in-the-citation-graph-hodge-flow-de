@@ -1,0 +1,25 @@
+{
+  "phase": 6,
+  "real_231journal_network": {
+    "gradient": 0.2300716068108262,
+    "curl": 0.7699283931455518,
+    "harmonic": 4.3593308254265476e-11
+  },
+  "synthetic_n_c10_network": {
+    "gradient": 0.04281665032115864,
+    "curl": 0.7796832993189189,
+    "harmonic": 0.17750005035970415
+  },
+  "interpretation": {
+    "gradient_dominant_in_real": false,
+    "curl_elevated_in_synth": true,
+    "real_grad": 0.2300716068108262,
+    "real_curl": 0.7699283931455518,
+    "real_harm": 4.3593308254265476e-11,
+    "synth_grad": 0.04281665032115864,
+    "synth_curl": 0.7796832993189189,
+    "synth_harm": 0.17750005035970415,
+    "delta_curl_synth_minus_real": 0.00975490617336705,
+    "note": "Real network: genuine scholarly flow expected to be mostly hierarchical (gradient-dominant). Synthetic n_c=10 network: injected cyclic rings raise curl fraction. Delta curl shows manipulation signal above natural baseline."
+  }
+}

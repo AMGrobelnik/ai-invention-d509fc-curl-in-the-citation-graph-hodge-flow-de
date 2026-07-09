@@ -1,0 +1,1252 @@
+{
+  "network_stats": {
+    "n_journals_raw": 800,
+    "n_active_nodes": 784,
+    "n_edges_thresholded": 5682,
+    "n_triangles": 7840,
+    "edge_threshold": 3,
+    "years": "2019-2020",
+    "is_synthetic": true,
+    "hodge_energy": {
+      "grad_fraction": 0.11664071270193335,
+      "curl_fraction": 0.7063973375751419,
+      "harm_fraction": 0.1769619497169589
+    }
+  },
+  "evaluation": {
+    "label_primary": "citation_stacking",
+    "n_positives_stacking": 30,
+    "n_positives_all": 30,
+    "methods": {
+      "hodge_curl_raw": {
+        "auc": 0.9309018567639257,
+        "auc_pr": 0.5985686176098932,
+        "prec_at_k": {
+          "10": 1.0,
+          "50": 0.36,
+          "100": 0.23
+        },
+        "ci": [
+          0.8928301200704544,
+          0.9657390009619194
+        ]
+      },
+      "hodge_curl_z": {
+        "auc": 0.7619805481874448,
+        "auc_pr": 0.12409684406807425,
+        "prec_at_k": {
+          "10": 0.0,
+          "50": 0.2,
+          "100": 0.14
+        },
+        "ci": [
+          0.6660038524846668,
+          0.8557157617363567
+        ]
+      },
+      "hodge_curl_norm": {
+        "auc": 0.8857206012378427,
+        "auc_pr": 0.49746195116366393,
+        "prec_at_k": {
+          "10": 1.0,
+          "50": 0.3,
+          "100": 0.18
+        },
+        "ci": [
+          0.8313496444957412,
+          0.9389119428563377
+        ]
+      },
+      "hodge_grad_residual": {
+        "auc": 0.9580459770114943,
+        "auc_pr": 0.5913368209410493,
+        "prec_at_k": {
+          "10": 0.9,
+          "50": 0.4,
+          "100": 0.25
+        },
+        "ci": [
+          0.9371541970311053,
+          0.9761735622891767
+        ]
+      },
+      "reciprocity": {
+        "auc": 0.5007515473032714,
+        "auc_pr": 0.03662456692177236,
+        "prec_at_k": {
+          "10": 0.0,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "ci": [
+          0.45623943515717397,
+          0.5442713121211109
+        ]
+      },
+      "within_group_density": {
+        "auc": 0.7377763041556146,
+        "auc_pr": 0.2622981665150649,
+        "prec_at_k": {
+          "10": 0.6,
+          "50": 0.12,
+          "100": 0.09
+        },
+        "ci": [
+          0.6529696127815502,
+          0.8216413611317781
+        ]
+      },
+      "pagerank": {
+        "auc": 0.6084438549955792,
+        "auc_pr": 0.04777880255957261,
+        "prec_at_k": {
+          "10": 0.0,
+          "50": 0.04,
+          "100": 0.03
+        },
+        "ci": [
+          0.5381534586245736,
+          0.6754974947023589
+        ]
+      },
+      "cidre": {
+        "auc": 0.6259062776304155,
+        "auc_pr": 0.06802242262076405,
+        "prec_at_k": {
+          "10": 0.0,
+          "50": 0.08,
+          "100": 0.1
+        },
+        "ci": [
+          0.4990583398955367,
+          0.7484736280421072
+        ]
+      }
+    },
+    "curl_vs_cidre_delta_auc": 0.13607427055702925,
+    "p_value_comparison": 0.097
+  },
+  "synthetic_injection_summary": {
+    "total_conditions": 56,
+    "cyclic_at_k5_w1x": {
+      "cartel_type": "cyclic",
+      "k": 5,
+      "w_factor": 1.0,
+      "n_repeats": 20,
+      "auc_hodge_curl_mean": 0.4696469833119384,
+      "auc_hodge_curl_std": 0.15768236380324227,
+      "auc_cidre_mean": 0.5224390243902438,
+      "auc_density_mean": 0.4678883183568677,
+      "auc_reciprocity_mean": 0.3982798459563543
+    }
+  },
+  "confound_test": {
+    "legit_clusters": [
+      {
+        "density": 0.7867063492063296,
+        "curl_per_triangle": 12.508448540704682,
+        "internal_curl_total": 8143.0,
+        "n_triangles": 651,
+        "n_members": 64,
+        "mean_reciprocity": 0.13628851780312506
+      },
+      {
+        "density": 0.6374007936507778,
+        "curl_per_triangle": 11.206261510126849,
+        "internal_curl_total": 6085.0,
+        "n_triangles": 543,
+        "n_members": 64,
+        "mean_reciprocity": 0.13607669229461747
+      },
+      {
+        "density": 0.6229752770673354,
+        "curl_per_triangle": 11.849624060148148,
+        "internal_curl_total": 6304.0,
+        "n_triangles": 532,
+        "n_members": 69,
+        "mean_reciprocity": 0.12637019161961574
+      },
+      {
+        "density": 0.6217757936507782,
+        "curl_per_triangle": 12.527237354083164,
+        "internal_curl_total": 6439.0,
+        "n_triangles": 514,
+        "n_members": 64,
+        "mean_reciprocity": 0.11685012256729402
+      },
+      {
+        "density": 0.5866123925825286,
+        "curl_per_triangle": 14.030303030299761,
+        "internal_curl_total": 6019.0,
+        "n_triangles": 429,
+        "n_members": 67,
+        "mean_reciprocity": 0.13517771214544855
+      }
+    ],
+    "cartel_groups": [
+      {
+        "density": 12.44583333322962,
+        "curl_per_triangle": 110.649999988935,
+        "internal_curl_total": 110.64999999999999,
+        "n_triangles": 1,
+        "n_members": 4,
+        "mean_reciprocity": 0.10979142010905096
+      },
+      {
+        "density": 25.224999999579584,
+        "curl_per_triangle": 112.64999998873499,
+        "internal_curl_total": 112.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.12230831496009126
+      },
+      {
+        "density": 24.724999999587915,
+        "curl_per_triangle": 109.649999989035,
+        "internal_curl_total": 109.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.11134172848987811
+      },
+      {
+        "density": 24.724999999587915,
+        "curl_per_triangle": 109.649999989035,
+        "internal_curl_total": 109.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.11443255450584604
+      },
+      {
+        "density": 24.891666666251805,
+        "curl_per_triangle": 108.649999989135,
+        "internal_curl_total": 108.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.12185942800465872
+      },
+      {
+        "density": 24.724999999587915,
+        "curl_per_triangle": 109.649999989035,
+        "internal_curl_total": 109.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.13828622669344692
+      },
+      {
+        "density": 24.724999999587915,
+        "curl_per_triangle": 109.649999989035,
+        "internal_curl_total": 109.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.12410906102513464
+      },
+      {
+        "density": 24.891666666251805,
+        "curl_per_triangle": 108.649999989135,
+        "internal_curl_total": 108.64999999999999,
+        "n_triangles": 1,
+        "n_members": 3,
+        "mean_reciprocity": 0.15592222060780758
+      },
+      {
+        "density": 10.239999999948802,
+        "curl_per_triangle": 109.649999989035,
+        "internal_curl_total": 109.64999999999999,
+        "n_triangles": 1,
+        "n_members": 5,
+        "mean_reciprocity": 0.13762608382951874
+      }
+    ],
+    "mannwhitney_density_p": 0.0029833592278656154,
+    "mannwhitney_curl_p": 0.0026692621712387453,
+    "partial_corr_curl": 0.153063363714443,
+    "partial_corr_ci": [
+      0.0737903175904134,
+      0.23847380685233666
+    ]
+  },
+  "top_triangles_by_curl": [
+    {
+      "nodes": [
+        481,
+        749,
+        780
+      ],
+      "journal_names": [
+        "Journal_0494_Environmental Science",
+        "Journal_0765_Chemistry",
+        "Journal_0796_Chemistry"
+      ],
+      "curl_value": 112.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        44,
+        132,
+        177
+      ],
+      "journal_names": [
+        "Journal_0044_Biology",
+        "Journal_0135_Physics",
+        "Journal_0181_Physics"
+      ],
+      "curl_value": 110.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        175,
+        354,
+        654
+      ],
+      "journal_names": [
+        "Journal_0179_Physics",
+        "Journal_0363_Mathematics",
+        "Journal_0670_Biology"
+      ],
+      "curl_value": 109.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        185,
+        203,
+        665
+      ],
+      "journal_names": [
+        "Journal_0189_Physics",
+        "Journal_0208_Medicine",
+        "Journal_0681_Biology"
+      ],
+      "curl_value": 109.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        330,
+        469,
+        548
+      ],
+      "journal_names": [
+        "Journal_0339_Mathematics",
+        "Journal_0482_Environmental Science",
+        "Journal_0562_Agriculture"
+      ],
+      "curl_value": 109.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        187,
+        255,
+        746
+      ],
+      "journal_names": [
+        "Journal_0191_Physics",
+        "Journal_0261_Medicine",
+        "Journal_0762_Chemistry"
+      ],
+      "curl_value": 109.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        205,
+        253,
+        351
+      ],
+      "journal_names": [
+        "Journal_0210_Medicine",
+        "Journal_0258_Medicine",
+        "Journal_0360_Mathematics"
+      ],
+      "curl_value": 109.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        125,
+        296,
+        628
+      ],
+      "journal_names": [
+        "Journal_0127_Chemistry",
+        "Journal_0303_Engineering",
+        "Journal_0643_Materials Science"
+      ],
+      "curl_value": 109.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        355,
+        358,
+        380
+      ],
+      "journal_names": [
+        "Journal_0364_Mathematics",
+        "Journal_0367_Mathematics",
+        "Journal_0390_Mathematics"
+      ],
+      "curl_value": -109.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        26,
+        32,
+        677
+      ],
+      "journal_names": [
+        "Journal_0026_Biology",
+        "Journal_0032_Biology",
+        "Journal_0693_Biology"
+      ],
+      "curl_value": 108.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        57,
+        592,
+        634
+      ],
+      "journal_names": [
+        "Journal_0057_Biology",
+        "Journal_0607_Materials Science",
+        "Journal_0649_Materials Science"
+      ],
+      "curl_value": 108.64999999999999,
+      "any_suppressed": true
+    },
+    {
+      "nodes": [
+        504,
+        516,
+        517
+      ],
+      "journal_names": [
+        "Journal_0518_Environmental Science",
+        "Journal_0530_Environmental Science",
+        "Journal_0531_Environmental Science"
+      ],
+      "curl_value": -94.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        504,
+        509,
+        517
+      ],
+      "journal_names": [
+        "Journal_0518_Environmental Science",
+        "Journal_0523_Environmental Science",
+        "Journal_0531_Environmental Science"
+      ],
+      "curl_value": -89.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        462,
+        516,
+        517
+      ],
+      "journal_names": [
+        "Journal_0475_Environmental Science",
+        "Journal_0530_Environmental Science",
+        "Journal_0531_Environmental Science"
+      ],
+      "curl_value": -87.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        435,
+        452,
+        455
+      ],
+      "journal_names": [
+        "Journal_0446_Computer Science",
+        "Journal_0464_Computer Science",
+        "Journal_0467_Computer Science"
+      ],
+      "curl_value": 87.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        235,
+        242,
+        243
+      ],
+      "journal_names": [
+        "Journal_0240_Medicine",
+        "Journal_0247_Medicine",
+        "Journal_0248_Medicine"
+      ],
+      "curl_value": -82.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        408,
+        430,
+        435
+      ],
+      "journal_names": [
+        "Journal_0418_Computer Science",
+        "Journal_0441_Computer Science",
+        "Journal_0446_Computer Science"
+      ],
+      "curl_value": 82.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        11,
+        33,
+        34
+      ],
+      "journal_names": [
+        "Journal_0011_Biology",
+        "Journal_0033_Biology",
+        "Journal_0034_Biology"
+      ],
+      "curl_value": -82.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        462,
+        494,
+        517
+      ],
+      "journal_names": [
+        "Journal_0475_Environmental Science",
+        "Journal_0507_Environmental Science",
+        "Journal_0531_Environmental Science"
+      ],
+      "curl_value": -80.0,
+      "any_suppressed": false
+    },
+    {
+      "nodes": [
+        478,
+        504,
+        517
+      ],
+      "journal_names": [
+        "Journal_0491_Environmental Science",
+        "Journal_0518_Environmental Science",
+        "Journal_0531_Environmental Science"
+      ],
+      "curl_value": 79.0,
+      "any_suppressed": false
+    }
+  ],
+  "prestige_ranking_top100": [
+    {
+      "rank": 1,
+      "journal_name": "Journal_0531_Environmental Science",
+      "prestige_score": 9.058256931594217,
+      "curl_z_score": 1.8662555046938885,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 2,
+      "journal_name": "Journal_0502_Environmental Science",
+      "prestige_score": 8.509330959174846,
+      "curl_z_score": 0.06820970733496214,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 3,
+      "journal_name": "Journal_0678_Biology",
+      "prestige_score": 7.140647211342163,
+      "curl_z_score": 0.6444540041232707,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 4,
+      "journal_name": "Journal_0139_Physics",
+      "prestige_score": 7.022263191345226,
+      "curl_z_score": 3.502927981182682,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 5,
+      "journal_name": "Journal_0529_Environmental Science",
+      "prestige_score": 6.570624857147356,
+      "curl_z_score": 0.3252141680935311,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 6,
+      "journal_name": "Journal_0532_Environmental Science",
+      "prestige_score": 6.416589521547316,
+      "curl_z_score": -0.9495185986382308,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 7,
+      "journal_name": "Journal_0471_Environmental Science",
+      "prestige_score": 5.6445584157113196,
+      "curl_z_score": 0.6613310366315222,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 8,
+      "journal_name": "Journal_0178_Physics",
+      "prestige_score": 5.545707248248071,
+      "curl_z_score": 2.4700638833588475,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 9,
+      "journal_name": "Journal_0489_Environmental Science",
+      "prestige_score": 5.0942723025363055,
+      "curl_z_score": 0.2851631238084099,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 10,
+      "journal_name": "Journal_0111_Chemistry",
+      "prestige_score": 5.060955478494471,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 11,
+      "journal_name": "Journal_0663_Materials Science",
+      "prestige_score": 4.993735886995683,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 12,
+      "journal_name": "Journal_0479_Environmental Science",
+      "prestige_score": 4.978348386505924,
+      "curl_z_score": 0.1419241215664166,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 13,
+      "journal_name": "Journal_0481_Environmental Science",
+      "prestige_score": 4.975352770584961,
+      "curl_z_score": -0.7782894909712912,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 14,
+      "journal_name": "Journal_0491_Environmental Science",
+      "prestige_score": 4.892517196381675,
+      "curl_z_score": -1.05493208810651,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 15,
+      "journal_name": "Journal_0388_Mathematics",
+      "prestige_score": 4.625603639036089,
+      "curl_z_score": 0.2914222898045135,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 16,
+      "journal_name": "Journal_0088_Chemistry",
+      "prestige_score": 4.601077775036518,
+      "curl_z_score": 2.775775527387585,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 17,
+      "journal_name": "Journal_0396_Mathematics",
+      "prestige_score": 4.595999305587554,
+      "curl_z_score": 1.7522696867753498,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 18,
+      "journal_name": "Journal_0183_Physics",
+      "prestige_score": 4.5482755408210025,
+      "curl_z_score": 0.34518580170756263,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 19,
+      "journal_name": "Journal_0467_Computer Science",
+      "prestige_score": 4.509573446609365,
+      "curl_z_score": 0.9196632443546218,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 20,
+      "journal_name": "Journal_0534_Environmental Science",
+      "prestige_score": 4.4843604689804195,
+      "curl_z_score": -1.2951450689783286,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 21,
+      "journal_name": "Journal_0474_Environmental Science",
+      "prestige_score": 4.374722967770099,
+      "curl_z_score": -0.13134545699439507,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 22,
+      "journal_name": "Journal_0341_Mathematics",
+      "prestige_score": 4.247766332057844,
+      "curl_z_score": 0.4079260619184534,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 23,
+      "journal_name": "Journal_0378_Mathematics",
+      "prestige_score": 4.104913686655007,
+      "curl_z_score": 0.842822607915891,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 24,
+      "journal_name": "Journal_0475_Environmental Science",
+      "prestige_score": 4.053146430000863,
+      "curl_z_score": 2.814887526841725,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 25,
+      "journal_name": "Journal_0362_Mathematics",
+      "prestige_score": 4.010072645824609,
+      "curl_z_score": 1.475743787375581,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 26,
+      "journal_name": "Journal_0523_Environmental Science",
+      "prestige_score": 4.0070453717473375,
+      "curl_z_score": -0.5886731030080341,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 27,
+      "journal_name": "Journal_0480_Environmental Science",
+      "prestige_score": 3.991842175056658,
+      "curl_z_score": -0.33843858518606096,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 28,
+      "journal_name": "Journal_0282_Engineering",
+      "prestige_score": 3.973980923080479,
+      "curl_z_score": -0.32727476111178005,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 29,
+      "journal_name": "Journal_0367_Mathematics",
+      "prestige_score": 3.951897850458123,
+      "curl_z_score": 3.4445722640636256,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 30,
+      "journal_name": "Journal_0418_Computer Science",
+      "prestige_score": 3.939531868765565,
+      "curl_z_score": -0.3352187499172546,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 31,
+      "journal_name": "Journal_0385_Mathematics",
+      "prestige_score": 3.9326669357337014,
+      "curl_z_score": 1.4846414497554536,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 32,
+      "journal_name": "Journal_0492_Environmental Science",
+      "prestige_score": 3.9134268598745754,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 33,
+      "journal_name": "Journal_0203_Medicine",
+      "prestige_score": 3.8083663273716755,
+      "curl_z_score": 0.5112856225242893,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 34,
+      "journal_name": "Journal_0129_Chemistry",
+      "prestige_score": 3.738877531975702,
+      "curl_z_score": 0.473603693053823,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 35,
+      "journal_name": "Journal_0131_Chemistry",
+      "prestige_score": 3.7298871029095286,
+      "curl_z_score": 0.7895107437018246,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 36,
+      "journal_name": "Journal_0648_Materials Science",
+      "prestige_score": 3.7145110083736443,
+      "curl_z_score": 1.598031044346312,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 37,
+      "journal_name": "Journal_0350_Mathematics",
+      "prestige_score": 3.688572945560884,
+      "curl_z_score": -0.2277064145045226,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 38,
+      "journal_name": "Journal_0446_Computer Science",
+      "prestige_score": 3.677999967182653,
+      "curl_z_score": 4.899634603770821,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 39,
+      "journal_name": "Journal_0501_Environmental Science",
+      "prestige_score": 3.674650174877596,
+      "curl_z_score": -0.5753250112801411,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 40,
+      "journal_name": "Journal_0186_Physics",
+      "prestige_score": 3.6292169219306842,
+      "curl_z_score": 0.15815320197423782,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 41,
+      "journal_name": "Journal_0004_Biology",
+      "prestige_score": 3.6260738575571576,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 42,
+      "journal_name": "Journal_0453_Computer Science",
+      "prestige_score": 3.6234314948850277,
+      "curl_z_score": -0.8121688349329638,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 43,
+      "journal_name": "Journal_0357_Mathematics",
+      "prestige_score": 3.5987798509989952,
+      "curl_z_score": -0.7138761919538801,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 44,
+      "journal_name": "Journal_0267_Medicine",
+      "prestige_score": 3.565331158725162,
+      "curl_z_score": -1.5387659873319717,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 45,
+      "journal_name": "Journal_0304_Engineering",
+      "prestige_score": 3.5497718063084145,
+      "curl_z_score": 0.9647716326665928,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 46,
+      "journal_name": "Journal_0494_Environmental Science",
+      "prestige_score": 3.5335865122470675,
+      "curl_z_score": -0.6981443866755359,
+      "is_suppressed_any": true
+    },
+    {
+      "rank": 47,
+      "journal_name": "Journal_0601_Agriculture",
+      "prestige_score": 3.533273395631036,
+      "curl_z_score": 2.0078686719342236,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 48,
+      "journal_name": "Journal_0667_Materials Science",
+      "prestige_score": 3.5330635202333114,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 49,
+      "journal_name": "Journal_0550_Agriculture",
+      "prestige_score": 3.5115255801125422,
+      "curl_z_score": 1.6121066016533996,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 50,
+      "journal_name": "Journal_0525_Environmental Science",
+      "prestige_score": 3.505691053364626,
+      "curl_z_score": -1.0369403746662391,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 51,
+      "journal_name": "Journal_0553_Agriculture",
+      "prestige_score": 3.496840619301208,
+      "curl_z_score": -1.5366226309583124,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 52,
+      "journal_name": "Journal_0498_Environmental Science",
+      "prestige_score": 3.4938751266339767,
+      "curl_z_score": -0.15214582115072625,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 53,
+      "journal_name": "Journal_0192_Physics",
+      "prestige_score": 3.4901372037638025,
+      "curl_z_score": 0.7043304661200572,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 54,
+      "journal_name": "Journal_0526_Environmental Science",
+      "prestige_score": 3.465551354993063,
+      "curl_z_score": 0.027903362162734122,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 55,
+      "journal_name": "Journal_0314_Engineering",
+      "prestige_score": 3.4462441150663348,
+      "curl_z_score": -0.2210843517838433,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 56,
+      "journal_name": "Journal_0115_Chemistry",
+      "prestige_score": 3.4462130241879168,
+      "curl_z_score": 1.1260539663756035,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 57,
+      "journal_name": "Journal_0264_Medicine",
+      "prestige_score": 3.4295911618225734,
+      "curl_z_score": 1.9530253432699358,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 58,
+      "journal_name": "Journal_0469_Environmental Science",
+      "prestige_score": 3.4080474527115996,
+      "curl_z_score": 0.19249560297804566,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 59,
+      "journal_name": "Journal_0158_Physics",
+      "prestige_score": 3.405563152087606,
+      "curl_z_score": 0.6655262814458742,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 60,
+      "journal_name": "Journal_0646_Materials Science",
+      "prestige_score": 3.3913063981632883,
+      "curl_z_score": -0.16767634990751618,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 61,
+      "journal_name": "Journal_0073_Chemistry",
+      "prestige_score": 3.3661253050187767,
+      "curl_z_score": 0.9513223621219792,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 62,
+      "journal_name": "Journal_0172_Physics",
+      "prestige_score": 3.359548117002901,
+      "curl_z_score": -0.1089332603654966,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 63,
+      "journal_name": "Journal_0512_Environmental Science",
+      "prestige_score": 3.3404857492581685,
+      "curl_z_score": -0.19832914028187465,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 64,
+      "journal_name": "Journal_0270_Engineering",
+      "prestige_score": 3.3277844483242514,
+      "curl_z_score": 1.6191296966617397,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 65,
+      "journal_name": "Journal_0726_Biology",
+      "prestige_score": 3.2917209034308326,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 66,
+      "journal_name": "Journal_0346_Mathematics",
+      "prestige_score": 3.271298516593846,
+      "curl_z_score": -0.2616048850040654,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 67,
+      "journal_name": "Journal_0559_Agriculture",
+      "prestige_score": 3.2710178034791917,
+      "curl_z_score": 0.4710097935222009,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 68,
+      "journal_name": "Journal_0630_Materials Science",
+      "prestige_score": 3.2695175008120367,
+      "curl_z_score": 0.6289840581975026,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 69,
+      "journal_name": "Journal_0444_Computer Science",
+      "prestige_score": 3.2550378479554425,
+      "curl_z_score": -0.5312147705390975,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 70,
+      "journal_name": "Journal_0500_Environmental Science",
+      "prestige_score": 3.243268345515785,
+      "curl_z_score": -1.2067348081040536,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 71,
+      "journal_name": "Journal_0520_Environmental Science",
+      "prestige_score": 3.2367915865332226,
+      "curl_z_score": -0.1918469705924817,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 72,
+      "journal_name": "Journal_0621_Materials Science",
+      "prestige_score": 3.232281270877591,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 73,
+      "journal_name": "Journal_0199_Physics",
+      "prestige_score": 3.2278253298196433,
+      "curl_z_score": 0.27730711961120535,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 74,
+      "journal_name": "Journal_0025_Biology",
+      "prestige_score": 3.2240625640655347,
+      "curl_z_score": 1.5479997101115677,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 75,
+      "journal_name": "Journal_0507_Environmental Science",
+      "prestige_score": 3.209903226906015,
+      "curl_z_score": 0.0016743257040300072,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 76,
+      "journal_name": "Journal_0723_Biology",
+      "prestige_score": 3.1911693081715544,
+      "curl_z_score": -0.5689961061989188,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 77,
+      "journal_name": "Journal_0725_Biology",
+      "prestige_score": 3.1786488086139837,
+      "curl_z_score": 0.9313148385429466,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 78,
+      "journal_name": "Journal_0682_Biology",
+      "prestige_score": 3.1596480251729857,
+      "curl_z_score": 0.31393935126897415,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 79,
+      "journal_name": "Journal_0211_Medicine",
+      "prestige_score": 3.1545895749371393,
+      "curl_z_score": -0.7537664597310402,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 80,
+      "journal_name": "Journal_0069_Chemistry",
+      "prestige_score": 3.150472737302399,
+      "curl_z_score": 6.275572975830867,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 81,
+      "journal_name": "Journal_0306_Engineering",
+      "prestige_score": 3.1327721355224685,
+      "curl_z_score": -0.37853866696398675,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 82,
+      "journal_name": "Journal_0242_Medicine",
+      "prestige_score": 3.1009081794068183,
+      "curl_z_score": 0.5689544709367853,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 83,
+      "journal_name": "Journal_0653_Materials Science",
+      "prestige_score": 3.090477778403275,
+      "curl_z_score": 1.3030593398928612,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 84,
+      "journal_name": "Journal_0207_Medicine",
+      "prestige_score": 3.0832356804769203,
+      "curl_z_score": -1.4575201368042787,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 85,
+      "journal_name": "Journal_0684_Biology",
+      "prestige_score": 3.0829991775504046,
+      "curl_z_score": 1.208748126022996,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 86,
+      "journal_name": "Journal_0569_Agriculture",
+      "prestige_score": 3.062352885060998,
+      "curl_z_score": 1.050453157520843,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 87,
+      "journal_name": "Journal_0174_Physics",
+      "prestige_score": 3.058872961240364,
+      "curl_z_score": -0.420518048333575,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 88,
+      "journal_name": "Journal_0365_Mathematics",
+      "prestige_score": 3.057554921903389,
+      "curl_z_score": 0.7855194125822313,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 89,
+      "journal_name": "Journal_0571_Agriculture",
+      "prestige_score": 3.053779750578116,
+      "curl_z_score": 0.23748796350671703,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 90,
+      "journal_name": "Journal_0349_Mathematics",
+      "prestige_score": 3.028728674994813,
+      "curl_z_score": 0.44079837784996795,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 91,
+      "journal_name": "Journal_0591_Agriculture",
+      "prestige_score": 3.024976824372065,
+      "curl_z_score": 1.1113400481598035,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 92,
+      "journal_name": "Journal_0627_Materials Science",
+      "prestige_score": 3.010496730337833,
+      "curl_z_score": -0.14930697876304458,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 93,
+      "journal_name": "Journal_0263_Medicine",
+      "prestige_score": 3.0075192662894534,
+      "curl_z_score": 1.6278247128977381,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 94,
+      "journal_name": "Journal_0043_Biology",
+      "prestige_score": 3.007202512136963,
+      "curl_z_score": 2.649154558669397,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 95,
+      "journal_name": "Journal_0437_Computer Science",
+      "prestige_score": 3.0048066985877524,
+      "curl_z_score": -0.10305843607735543,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 96,
+      "journal_name": "Journal_0364_Mathematics",
+      "prestige_score": 2.9952025915622285,
+      "curl_z_score": 3.8265371705278293,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 97,
+      "journal_name": "Journal_0257_Medicine",
+      "prestige_score": 2.9892897622923313,
+      "curl_z_score": -1.0685105877579575,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 98,
+      "journal_name": "Journal_0197_Physics",
+      "prestige_score": 2.986901916876115,
+      "curl_z_score": 1.8557091634531522,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 99,
+      "journal_name": "Journal_0361_Mathematics",
+      "prestige_score": 2.973719764211684,
+      "curl_z_score": -0.17946064291927982,
+      "is_suppressed_any": false
+    },
+    {
+      "rank": 100,
+      "journal_name": "Journal_0602_Agriculture",
+      "prestige_score": 2.9723342463728444,
+      "curl_z_score": 0.0,
+      "is_suppressed_any": false
+    }
+  ]
+}

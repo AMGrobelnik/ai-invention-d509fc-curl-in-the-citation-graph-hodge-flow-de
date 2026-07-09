@@ -1,0 +1,310 @@
+[
+  {
+    "name": "Acta Crystallographica Section E",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S146636433",
+    "score": 100
+  },
+  {
+    "name": "Current Science",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S29607422",
+    "score": 100
+  },
+  {
+    "name": "Biomedical Research",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S4210176780",
+    "score": 100
+  },
+  {
+    "name": "Medical Science Monitor",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S156858864",
+    "score": 100
+  },
+  {
+    "name": "Cellular and Molecular Biology",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S21749381",
+    "score": 100
+  },
+  {
+    "name": "Asian Pacific Journal of Tropical Medicine",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S203437272",
+    "score": 100
+  },
+  {
+    "name": "International Journal of Clinical and Experimental Medicine",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S168512209",
+    "score": 100
+  },
+  {
+    "name": "Journal of International Medical Research",
+    "year": 2018,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S62018274",
+    "score": 100
+  },
+  {
+    "name": "Journal of Cellular Biochemistry",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S53807158",
+    "score": 100
+  },
+  {
+    "name": "Journal of Cellular Physiology",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S43643205",
+    "score": 100
+  },
+  {
+    "name": "American Journal of Translational Research",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S25983388",
+    "score": 100
+  },
+  {
+    "name": "BioMed Research International",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S1010394304",
+    "score": 100
+  },
+  {
+    "name": "Oncotarget",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S126644158",
+    "score": 100
+  },
+  {
+    "name": "Medicine",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S28966261",
+    "score": 100
+  },
+  {
+    "name": "Genes",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S194631498",
+    "score": 100
+  },
+  {
+    "name": "Frontiers in Genetics",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S2597340651",
+    "score": 100
+  },
+  {
+    "name": "Frontiers in Microbiology",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S2484704948",
+    "score": 100
+  },
+  {
+    "name": "PLOS ONE",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S202381698",
+    "score": 100
+  },
+  {
+    "name": "RSC Advances",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S2481244646",
+    "score": 100
+  },
+  {
+    "name": "European Journal of Medical Research",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S64516541",
+    "score": 100
+  },
+  {
+    "name": "Clinical and Experimental Medicine",
+    "year": 2019,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S1255940",
+    "score": 100
+  },
+  {
+    "name": "International Journal of Environmental Research and Public Health",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S15239247",
+    "score": 100
+  },
+  {
+    "name": "Sustainability",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S10134376",
+    "score": 100
+  },
+  {
+    "name": "Applied Sciences",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S4210205812",
+    "score": 100
+  },
+  {
+    "name": "Energies",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S198098182",
+    "score": 100
+  },
+  {
+    "name": "Nutrients",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S110785341",
+    "score": 100
+  },
+  {
+    "name": "Sensors",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S101949793",
+    "score": 100
+  },
+  {
+    "name": "Water",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S134216166",
+    "score": 100
+  },
+  {
+    "name": "Materials",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S18714766",
+    "score": 100
+  },
+  {
+    "name": "Remote Sensing",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S43295729",
+    "score": 100
+  },
+  {
+    "name": "Electronics",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S4210202905",
+    "score": 100
+  },
+  {
+    "name": "Processes",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S4210201879",
+    "score": 100
+  },
+  {
+    "name": "Symmetry",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S190787756",
+    "score": 100
+  },
+  {
+    "name": "Mathematics",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S4210192031",
+    "score": 100
+  },
+  {
+    "name": "Journal of Clinical Medicine",
+    "year": 2020,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S2737969411",
+    "score": 100
+  },
+  {
+    "name": "Frontiers in Oncology",
+    "year": 2021,
+    "match": "issn",
+    "openalex_id": "https://openalex.org/S2596394214",
+    "score": 100
+  },
+  {
+    "name": "Frontiers in Neuroscience",
+    "year": 2021,
+    "match": "none",
+    "best_score": 72.72727272727273
+  },
+  {
+    "name": "Frontiers in Immunology",
+    "year": 2021,
+    "match": "fuzzy",
+    "openalex_id": "https://openalex.org/S2595292759",
+    "matched_name": "Frontiers in Immunology",
+    "score": 100.0
+  },
+  {
+    "name": "Frontiers in Psychology",
+    "year": 2021,
+    "match": "none",
+    "best_score": 73.91304347826086
+  },
+  {
+    "name": "Frontiers in Cell and Developmental Biology",
+    "year": 2021,
+    "match": "none",
+    "best_score": 60.273972602739725
+  },
+  {
+    "name": "Scientific Reports",
+    "year": 2021,
+    "match": "fuzzy",
+    "openalex_id": "https://openalex.org/S196734849",
+    "matched_name": "Scientific Reports",
+    "score": 100.0
+  },
+  {
+    "name": "Cells",
+    "year": 2022,
+    "match": "fuzzy",
+    "openalex_id": "https://openalex.org/S110447773",
+    "matched_name": "Cell",
+    "score": 88.88888888888889
+  },
+  {
+    "name": "Cancers",
+    "year": 2022,
+    "match": "fuzzy",
+    "openalex_id": "https://openalex.org/S126033908",
+    "matched_name": "Cancer",
+    "score": 92.3076923076923
+  },
+  {
+    "name": "Brain Sciences",
+    "year": 2022,
+    "match": "none",
+    "best_score": 66.66666666666667
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "phase": 3,
+  "N_synth": 800,
+  "n_cartel_nodes_synth": 30,
+  "hodge_grad_auc": 0.7366666666666668,
+  "ci_grad": [
+    0.6862388247061766,
+    0.7846907512148268
+  ],
+  "hodge_curl_auc": 0.5582683982683982,
+  "ci_curl": [
+    0.4574804852566819,
+    0.656036772698916
+  ],
+  "cidre_auc": 0.8450865800865801,
+  "ci_cidre": [
+    0.7655712226445478,
+    0.9121331519223078
+  ],
+  "cidre_method_used": "cidre_poisson_spectral_fallback",
+  "n_cidre_groups": 800,
+  "energy_fractions_synth": {
+    "gradient": 0.04281665032115864,
+    "curl": 0.7796832993189189,
+    "harmonic": 0.17750005035970415
+  },
+  "note_iter1_approx_cidre_auc": 0.626
+}

@@ -1,0 +1,1850 @@
+[
+  {
+    "id": "https://openalex.org/S1010394304",
+    "name": "BioMed Research International",
+    "issn_l": "2314-6133",
+    "field": "",
+    "works_count": 26831,
+    "cited_by_count": 797532
+  },
+  {
+    "id": "https://openalex.org/S10134376",
+    "name": "Sustainability",
+    "issn_l": "2071-1050",
+    "field": "",
+    "works_count": 107084,
+    "cited_by_count": 2229076
+  },
+  {
+    "id": "https://openalex.org/S101949793",
+    "name": "Sensors",
+    "issn_l": "1424-8220",
+    "field": "",
+    "works_count": 79869,
+    "cited_by_count": 1875484
+  },
+  {
+    "id": "https://openalex.org/S103225281",
+    "name": "NeuroImage",
+    "issn_l": "1053-8119",
+    "field": "",
+    "works_count": 28547,
+    "cited_by_count": 2345001
+  },
+  {
+    "id": "https://openalex.org/S103895331",
+    "name": "Nature Materials",
+    "issn_l": "1476-1122",
+    "field": "",
+    "works_count": 6986,
+    "cited_by_count": 1683603
+  },
+  {
+    "id": "https://openalex.org/S104038378",
+    "name": "Biochemistry",
+    "issn_l": "0006-2960",
+    "field": "",
+    "works_count": 71076,
+    "cited_by_count": 3923468
+  },
+  {
+    "id": "https://openalex.org/S104830714",
+    "name": "FEBS Letters",
+    "issn_l": "0014-5793",
+    "field": "",
+    "works_count": 59929,
+    "cited_by_count": 2462901
+  },
+  {
+    "id": "https://openalex.org/S105243760",
+    "name": "Applied Physics Letters",
+    "issn_l": "0003-6951",
+    "field": "",
+    "works_count": 141539,
+    "cited_by_count": 6103309
+  },
+  {
+    "id": "https://openalex.org/S10623703",
+    "name": "International Journal of Molecular Sciences",
+    "issn_l": "1422-0067",
+    "field": "",
+    "works_count": 112879,
+    "cited_by_count": 3120596
+  },
+  {
+    "id": "https://openalex.org/S10652568",
+    "name": "Circulation Research",
+    "issn_l": "0009-7330",
+    "field": "",
+    "works_count": 30865,
+    "cited_by_count": 2015225
+  },
+  {
+    "id": "https://openalex.org/S106963461",
+    "name": "Nature Biotechnology",
+    "issn_l": "1087-0156",
+    "field": "",
+    "works_count": 19471,
+    "cited_by_count": 1878782
+  },
+  {
+    "id": "https://openalex.org/S108911230",
+    "name": "Molecules",
+    "issn_l": "1420-3049",
+    "field": "",
+    "works_count": 64802,
+    "cited_by_count": 1772248
+  },
+  {
+    "id": "https://openalex.org/S109565702",
+    "name": "Applied Energy",
+    "issn_l": "0306-2619",
+    "field": "",
+    "works_count": 28164,
+    "cited_by_count": 1811403
+  },
+  {
+    "id": "https://openalex.org/S110447773",
+    "name": "Cell",
+    "issn_l": "0092-8674",
+    "field": "",
+    "works_count": 27001,
+    "cited_by_count": 8973350
+  },
+  {
+    "id": "https://openalex.org/S110785341",
+    "name": "Nutrients",
+    "issn_l": "2072-6643",
+    "field": "",
+    "works_count": 38836,
+    "cited_by_count": 1239625
+  },
+  {
+    "id": "https://openalex.org/S111155417",
+    "name": "Journal of the American Chemical Society",
+    "issn_l": "0002-7863",
+    "field": "",
+    "works_count": 221196,
+    "cited_by_count": 15679002
+  },
+  {
+    "id": "https://openalex.org/S11296630",
+    "name": "The Journal of the Acoustical Society of America",
+    "issn_l": "0001-4966",
+    "field": "",
+    "works_count": 172549,
+    "cited_by_count": 1737886
+  },
+  {
+    "id": "https://openalex.org/S114430552",
+    "name": "Journal of Clinical Investigation",
+    "issn_l": "0021-9738",
+    "field": "",
+    "works_count": 37632,
+    "cited_by_count": 4904280
+  },
+  {
+    "id": "https://openalex.org/S116025658",
+    "name": "American Journal of Psychiatry",
+    "issn_l": "0002-953X",
+    "field": "",
+    "works_count": 49250,
+    "cited_by_count": 2260988
+  },
+  {
+    "id": "https://openalex.org/S116251202",
+    "name": "Circulation",
+    "issn_l": "0009-7322",
+    "field": "",
+    "works_count": 128814,
+    "cited_by_count": 6240066
+  },
+  {
+    "id": "https://openalex.org/S118357697",
+    "name": "Brain",
+    "issn_l": "0006-8950",
+    "field": "",
+    "works_count": 19476,
+    "cited_by_count": 1763056
+  },
+  {
+    "id": "https://openalex.org/S119230507",
+    "name": "Earth and Planetary Science Letters",
+    "issn_l": "0012-821X",
+    "field": "",
+    "works_count": 21786,
+    "cited_by_count": 1627974
+  },
+  {
+    "id": "https://openalex.org/S119722071",
+    "name": "Annals of Internal Medicine",
+    "issn_l": "0003-4819",
+    "field": "",
+    "works_count": 63226,
+    "cited_by_count": 3381378
+  },
+  {
+    "id": "https://openalex.org/S122347013",
+    "name": "American Journal of Obstetrics and Gynecology",
+    "issn_l": "0002-9378",
+    "field": "",
+    "works_count": 95674,
+    "cited_by_count": 2005817
+  },
+  {
+    "id": "https://openalex.org/S1255940",
+    "name": "Clinical and Experimental Medicine",
+    "issn_l": "1591-8890",
+    "field": "",
+    "works_count": 4408,
+    "cited_by_count": 51409
+  },
+  {
+    "id": "https://openalex.org/S125754415",
+    "name": "Proceedings of the National Academy of Sciences",
+    "issn_l": "0027-8424",
+    "field": "",
+    "works_count": 171268,
+    "cited_by_count": 22841749
+  },
+  {
+    "id": "https://openalex.org/S126033908",
+    "name": "Cancer",
+    "issn_l": "0008-543X",
+    "field": "",
+    "works_count": 53361,
+    "cited_by_count": 3132927
+  },
+  {
+    "id": "https://openalex.org/S126359496",
+    "name": "Archives of General Psychiatry",
+    "issn_l": "0003-990X",
+    "field": "",
+    "works_count": 10835,
+    "cited_by_count": 1560190
+  },
+  {
+    "id": "https://openalex.org/S126644158",
+    "name": "Oncotarget",
+    "issn_l": "1949-2553",
+    "field": "",
+    "works_count": 27838,
+    "cited_by_count": 1006067
+  },
+  {
+    "id": "https://openalex.org/S127827428",
+    "name": "Nature Methods",
+    "issn_l": "1548-7091",
+    "field": "",
+    "works_count": 8408,
+    "cited_by_count": 1613306
+  },
+  {
+    "id": "https://openalex.org/S127916151",
+    "name": "The EMBO Journal",
+    "issn_l": "0261-4189",
+    "field": "",
+    "works_count": 22173,
+    "cited_by_count": 3059395
+  },
+  {
+    "id": "https://openalex.org/S128227336",
+    "name": "Infection and Immunity",
+    "issn_l": "0019-9567",
+    "field": "",
+    "works_count": 34295,
+    "cited_by_count": 2025097
+  },
+  {
+    "id": "https://openalex.org/S128425624",
+    "name": "Current Biology",
+    "issn_l": "0960-9822",
+    "field": "",
+    "works_count": 25669,
+    "cited_by_count": 1801065
+  },
+  {
+    "id": "https://openalex.org/S128439998",
+    "name": "Oncogene",
+    "issn_l": "0950-9232",
+    "field": "",
+    "works_count": 19626,
+    "cited_by_count": 1731745
+  },
+  {
+    "id": "https://openalex.org/S128848949",
+    "name": "Journal of Bone and Joint Surgery",
+    "issn_l": "0021-9355",
+    "field": "",
+    "works_count": 27596,
+    "cited_by_count": 1824854
+  },
+  {
+    "id": "https://openalex.org/S129060628",
+    "name": "Diabetes",
+    "issn_l": "0012-1797",
+    "field": "",
+    "works_count": 45549,
+    "cited_by_count": 1838569
+  },
+  {
+    "id": "https://openalex.org/S133274750",
+    "name": "Journal of Bacteriology",
+    "issn_l": "0021-9193",
+    "field": "",
+    "works_count": 55662,
+    "cited_by_count": 3002291
+  },
+  {
+    "id": "https://openalex.org/S133942674",
+    "name": "Tetrahedron Letters",
+    "issn_l": "0040-4039",
+    "field": "",
+    "works_count": 106721,
+    "cited_by_count": 2491913
+  },
+  {
+    "id": "https://openalex.org/S134216166",
+    "name": "Water",
+    "issn_l": "2073-4441",
+    "field": "",
+    "works_count": 32042,
+    "cited_by_count": 543414
+  },
+  {
+    "id": "https://openalex.org/S134307298",
+    "name": "Applied Catalysis B: Environmental",
+    "issn_l": "0926-3373",
+    "field": "",
+    "works_count": 19832,
+    "cited_by_count": 1687693
+  },
+  {
+    "id": "https://openalex.org/S134390580",
+    "name": "Optics Letters",
+    "issn_l": "0146-9592",
+    "field": "",
+    "works_count": 46105,
+    "cited_by_count": 1678741
+  },
+  {
+    "id": "https://openalex.org/S134644764",
+    "name": "Journal of Agricultural and Food Chemistry",
+    "issn_l": "0021-8561",
+    "field": "",
+    "works_count": 61832,
+    "cited_by_count": 2918955
+  },
+  {
+    "id": "https://openalex.org/S134668137",
+    "name": "Nucleic Acids Research",
+    "issn_l": "0305-1048",
+    "field": "",
+    "works_count": 56189,
+    "cited_by_count": 6092316
+  },
+  {
+    "id": "https://openalex.org/S13479253",
+    "name": "Environmental Science & Technology",
+    "issn_l": "0013-936X",
+    "field": "",
+    "works_count": 70304,
+    "cited_by_count": 4223087
+  },
+  {
+    "id": "https://openalex.org/S135204980",
+    "name": "Advanced Functional Materials",
+    "issn_l": "1616-301X",
+    "field": "",
+    "works_count": 42459,
+    "cited_by_count": 2506643
+  },
+  {
+    "id": "https://openalex.org/S135837084",
+    "name": "Journal of Neurochemistry",
+    "issn_l": "0022-3042",
+    "field": "",
+    "works_count": 32952,
+    "cited_by_count": 1647063
+  },
+  {
+    "id": "https://openalex.org/S137773608",
+    "name": "Nature",
+    "issn_l": "0028-0836",
+    "field": "",
+    "works_count": 449081,
+    "cited_by_count": 27031531
+  },
+  {
+    "id": "https://openalex.org/S137905309",
+    "name": "Nature Genetics",
+    "issn_l": "1061-4036",
+    "field": "",
+    "works_count": 11791,
+    "cited_by_count": 2976365
+  },
+  {
+    "id": "https://openalex.org/S138759888",
+    "name": "Journal of The Electrochemical Society",
+    "issn_l": "0013-4651",
+    "field": "",
+    "works_count": 55920,
+    "cited_by_count": 2173571
+  },
+  {
+    "id": "https://openalex.org/S140251998",
+    "name": "Journal of Biological Chemistry",
+    "issn_l": "0021-9258",
+    "field": "",
+    "works_count": 214085,
+    "cited_by_count": 17339687
+  },
+  {
+    "id": "https://openalex.org/S140889577",
+    "name": "Journal of Applied Physiology",
+    "issn_l": "1522-1601",
+    "field": "",
+    "works_count": 34156,
+    "cited_by_count": 1846763
+  },
+  {
+    "id": "https://openalex.org/S142952003",
+    "name": "Journal of Neurophysiology",
+    "issn_l": "0022-3077",
+    "field": "",
+    "works_count": 23472,
+    "cited_by_count": 1827260
+  },
+  {
+    "id": "https://openalex.org/S143352558",
+    "name": "Gastroenterology",
+    "issn_l": "0016-5085",
+    "field": "",
+    "works_count": 160407,
+    "cited_by_count": 2901032
+  },
+  {
+    "id": "https://openalex.org/S143846845",
+    "name": "Nano Letters",
+    "issn_l": "1530-6984",
+    "field": "",
+    "works_count": 27372,
+    "cited_by_count": 2756282
+  },
+  {
+    "id": "https://openalex.org/S145089992",
+    "name": "Journal of Hazardous Materials",
+    "issn_l": "0304-3894",
+    "field": "",
+    "works_count": 42990,
+    "cited_by_count": 2498298
+  },
+  {
+    "id": "https://openalex.org/S145378405",
+    "name": "Accounts of Chemical Research",
+    "issn_l": "0001-4842",
+    "field": "",
+    "works_count": 9158,
+    "cited_by_count": 1584342
+  },
+  {
+    "id": "https://openalex.org/S145476921",
+    "name": "ACS Nano",
+    "issn_l": "1936-0851",
+    "field": "",
+    "works_count": 29102,
+    "cited_by_count": 2717714
+  },
+  {
+    "id": "https://openalex.org/S146636433",
+    "name": "Acta Crystallographica Section E Structure Reports Online",
+    "issn_l": "1600-5368",
+    "field": "",
+    "works_count": 40807,
+    "cited_by_count": 94337
+  },
+  {
+    "id": "https://openalex.org/S149937609",
+    "name": "Chemical Engineering Journal",
+    "issn_l": "1385-8947",
+    "field": "",
+    "works_count": 76844,
+    "cited_by_count": 3351026
+  },
+  {
+    "id": "https://openalex.org/S15137598",
+    "name": "Journal of Clinical Oncology",
+    "issn_l": "0732-183X",
+    "field": "",
+    "works_count": 174071,
+    "cited_by_count": 4463150
+  },
+  {
+    "id": "https://openalex.org/S151589183",
+    "name": "Biochemical and Biophysical Research Communications",
+    "issn_l": "0006-291X",
+    "field": "",
+    "works_count": 102041,
+    "cited_by_count": 3596233
+  },
+  {
+    "id": "https://openalex.org/S152000018",
+    "name": "Journal of Fluid Mechanics",
+    "issn_l": "0022-1120",
+    "field": "",
+    "works_count": 32533,
+    "cited_by_count": 1911931
+  },
+  {
+    "id": "https://openalex.org/S15239247",
+    "name": "International Journal of Environmental Research and Public Health",
+    "issn_l": "1660-4601",
+    "field": "",
+    "works_count": 66793,
+    "cited_by_count": 1786487
+  },
+  {
+    "id": "https://openalex.org/S152760256",
+    "name": "Chemical Communications",
+    "issn_l": "1359-7345",
+    "field": "",
+    "works_count": 77996,
+    "cited_by_count": 3200623
+  },
+  {
+    "id": "https://openalex.org/S154732359",
+    "name": "Materials Science and Engineering A",
+    "issn_l": "0921-5093",
+    "field": "",
+    "works_count": 45938,
+    "cited_by_count": 1798324
+  },
+  {
+    "id": "https://openalex.org/S156174673",
+    "name": "Hepatology",
+    "issn_l": "0270-9139",
+    "field": "",
+    "works_count": 31978,
+    "cited_by_count": 1959995
+  },
+  {
+    "id": "https://openalex.org/S156208185",
+    "name": "Molecular Cell",
+    "issn_l": "1097-2765",
+    "field": "",
+    "works_count": 10619,
+    "cited_by_count": 1725288
+  },
+  {
+    "id": "https://openalex.org/S156858864",
+    "name": "Medical Science Monitor",
+    "issn_l": "1234-1010",
+    "field": "",
+    "works_count": 8839,
+    "cited_by_count": 157077
+  },
+  {
+    "id": "https://openalex.org/S157527038",
+    "name": "Endocrinology",
+    "issn_l": "0013-7227",
+    "field": "",
+    "works_count": 51657,
+    "cited_by_count": 2371339
+  },
+  {
+    "id": "https://openalex.org/S157664895",
+    "name": "Annals of Surgery",
+    "issn_l": "0003-4932",
+    "field": "",
+    "works_count": 38080,
+    "cited_by_count": 1833926
+  },
+  {
+    "id": "https://openalex.org/S158228368",
+    "name": "Applied and Environmental Microbiology",
+    "issn_l": "0099-2240",
+    "field": "",
+    "works_count": 38720,
+    "cited_by_count": 3120835
+  },
+  {
+    "id": "https://openalex.org/S162030435",
+    "name": "Journal of Medicinal Chemistry",
+    "issn_l": "0022-2623",
+    "field": "",
+    "works_count": 40714,
+    "cited_by_count": 1967434
+  },
+  {
+    "id": "https://openalex.org/S163807576",
+    "name": "Biomaterials",
+    "issn_l": "0142-9612",
+    "field": "",
+    "works_count": 22774,
+    "cited_by_count": 2269002
+  },
+  {
+    "id": "https://openalex.org/S164001016",
+    "name": "ACS Applied Materials & Interfaces",
+    "issn_l": "1944-8244",
+    "field": "",
+    "works_count": 69710,
+    "cited_by_count": 3297690
+  },
+  {
+    "id": "https://openalex.org/S164566984",
+    "name": "Physical Review A",
+    "issn_l": "1050-2947",
+    "field": "",
+    "works_count": 55109,
+    "cited_by_count": 2186942
+  },
+  {
+    "id": "https://openalex.org/S164770093",
+    "name": "Fuel",
+    "issn_l": "0016-2361",
+    "field": "",
+    "works_count": 46646,
+    "cited_by_count": 1680284
+  },
+  {
+    "id": "https://openalex.org/S168512209",
+    "name": "International Journal of Clinical and Experimental Medicine",
+    "issn_l": "1940-5901",
+    "field": "",
+    "works_count": 184,
+    "cited_by_count": 187
+  },
+  {
+    "id": "https://openalex.org/S168522863",
+    "name": "Cancer Research",
+    "issn_l": "0008-5472",
+    "field": "",
+    "works_count": 159298,
+    "cited_by_count": 2149805
+  },
+  {
+    "id": "https://openalex.org/S168778273",
+    "name": "Genes & Development",
+    "issn_l": "0890-9369",
+    "field": "",
+    "works_count": 8856,
+    "cited_by_count": 1952636
+  },
+  {
+    "id": "https://openalex.org/S171072222",
+    "name": "Inorganic Chemistry",
+    "issn_l": "0020-1669",
+    "field": "",
+    "works_count": 78230,
+    "cited_by_count": 2772965
+  },
+  {
+    "id": "https://openalex.org/S172573765",
+    "name": "JAMA",
+    "issn_l": "0098-7484",
+    "field": "",
+    "works_count": 269128,
+    "cited_by_count": 6992844
+  },
+  {
+    "id": "https://openalex.org/S173952182",
+    "name": "Physics Letters B",
+    "issn_l": "0370-2693",
+    "field": "",
+    "works_count": 67668,
+    "cited_by_count": 2571798
+  },
+  {
+    "id": "https://openalex.org/S176136234",
+    "name": "Journal of Chromatography A",
+    "issn_l": "0021-9673",
+    "field": "",
+    "works_count": 68789,
+    "cited_by_count": 2168235
+  },
+  {
+    "id": "https://openalex.org/S177147899",
+    "name": "Journal of Power Sources",
+    "issn_l": "0378-7753",
+    "field": "",
+    "works_count": 41178,
+    "cited_by_count": 2234154
+  },
+  {
+    "id": "https://openalex.org/S177196338",
+    "name": "Macromolecules",
+    "issn_l": "0024-9297",
+    "field": "",
+    "works_count": 52619,
+    "cited_by_count": 2817012
+  },
+  {
+    "id": "https://openalex.org/S178776955",
+    "name": "Optics Express",
+    "issn_l": "1094-4087",
+    "field": "",
+    "works_count": 67547,
+    "cited_by_count": 2169022
+  },
+  {
+    "id": "https://openalex.org/S181332294",
+    "name": "Physical Chemistry Chemical Physics",
+    "issn_l": "1463-9076",
+    "field": "",
+    "works_count": 58448,
+    "cited_by_count": 1733499
+  },
+  {
+    "id": "https://openalex.org/S181568219",
+    "name": "European Heart Journal",
+    "issn_l": "0195-668X",
+    "field": "",
+    "works_count": 69997,
+    "cited_by_count": 1676665
+  },
+  {
+    "id": "https://openalex.org/S183149254",
+    "name": "Clinical Cancer Research",
+    "issn_l": "1078-0432",
+    "field": "",
+    "works_count": 27423,
+    "cited_by_count": 1638343
+  },
+  {
+    "id": "https://openalex.org/S183492911",
+    "name": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+    "issn_l": "0277-786X",
+    "field": "",
+    "works_count": 436477,
+    "cited_by_count": 1876486
+  },
+  {
+    "id": "https://openalex.org/S185186944",
+    "name": "The American Journal of Cardiology",
+    "issn_l": "0002-9149",
+    "field": "",
+    "works_count": 55362,
+    "cited_by_count": 1821319
+  },
+  {
+    "id": "https://openalex.org/S185621672",
+    "name": "The Journal of Physical Chemistry B",
+    "issn_l": "1520-5207",
+    "field": "",
+    "works_count": 52249,
+    "cited_by_count": 2638333
+  },
+  {
+    "id": "https://openalex.org/S186054908",
+    "name": "Polymer",
+    "issn_l": "0032-3861",
+    "field": "",
+    "works_count": 41668,
+    "cited_by_count": 1611823
+  },
+  {
+    "id": "https://openalex.org/S18714766",
+    "name": "Materials",
+    "issn_l": "1996-1944",
+    "field": "",
+    "works_count": 57227,
+    "cited_by_count": 1048977
+  },
+  {
+    "id": "https://openalex.org/S187585107",
+    "name": "Journal of High Energy Physics",
+    "issn_l": "1029-8479",
+    "field": "",
+    "works_count": 47035,
+    "cited_by_count": 1887419
+  },
+  {
+    "id": "https://openalex.org/S187991544",
+    "name": "Journal of Applied Physics",
+    "issn_l": "0021-8979",
+    "field": "",
+    "works_count": 153097,
+    "cited_by_count": 4989825
+  },
+  {
+    "id": "https://openalex.org/S190787756",
+    "name": "Symmetry",
+    "issn_l": "2073-8994",
+    "field": "",
+    "works_count": 17805,
+    "cited_by_count": 193575
+  },
+  {
+    "id": "https://openalex.org/S191963794",
+    "name": "Analytical Chemistry",
+    "issn_l": "0003-2700",
+    "field": "",
+    "works_count": 140563,
+    "cited_by_count": 4140540
+  },
+  {
+    "id": "https://openalex.org/S194631498",
+    "name": "Genes",
+    "issn_l": "2073-4425",
+    "field": "",
+    "works_count": 14805,
+    "cited_by_count": 253376
+  },
+  {
+    "id": "https://openalex.org/S195663288",
+    "name": "Monthly Notices of the Royal Astronomical Society",
+    "issn_l": "0035-8711",
+    "field": "",
+    "works_count": 94437,
+    "cited_by_count": 3645966
+  },
+  {
+    "id": "https://openalex.org/S196734849",
+    "name": "Scientific Reports",
+    "issn_l": "2045-2322",
+    "field": "",
+    "works_count": 303170,
+    "cited_by_count": 7873745
+  },
+  {
+    "id": "https://openalex.org/S1980519",
+    "name": "The Astrophysical Journal",
+    "issn_l": "0004-637X",
+    "field": "",
+    "works_count": 134034,
+    "cited_by_count": 7518618
+  },
+  {
+    "id": "https://openalex.org/S198098182",
+    "name": "Energies",
+    "issn_l": "1996-1073",
+    "field": "",
+    "works_count": 63248,
+    "cited_by_count": 1101843
+  },
+  {
+    "id": "https://openalex.org/S198339081",
+    "name": "Electrochimica Acta",
+    "issn_l": "0013-4686",
+    "field": "",
+    "works_count": 53774,
+    "cited_by_count": 2015000
+  },
+  {
+    "id": "https://openalex.org/S199944782",
+    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "issn_l": "0162-8828",
+    "field": "",
+    "works_count": 12355,
+    "cited_by_count": 1867251
+  },
+  {
+    "id": "https://openalex.org/S200071133",
+    "name": "Blood",
+    "issn_l": "0006-4971",
+    "field": "",
+    "works_count": 197688,
+    "cited_by_count": 5625409
+  },
+  {
+    "id": "https://openalex.org/S201989124",
+    "name": "Organic Letters",
+    "issn_l": "1523-7052",
+    "field": "",
+    "works_count": 45791,
+    "cited_by_count": 1929711
+  },
+  {
+    "id": "https://openalex.org/S202381698",
+    "name": "PLoS ONE",
+    "issn_l": "1932-6203",
+    "field": "",
+    "works_count": 341179,
+    "cited_by_count": 12447124
+  },
+  {
+    "id": "https://openalex.org/S202680183",
+    "name": "Industrial & Engineering Chemistry Research",
+    "issn_l": "0888-5885",
+    "field": "",
+    "works_count": 46466,
+    "cited_by_count": 1562005
+  },
+  {
+    "id": "https://openalex.org/S203256638",
+    "name": "Nature Medicine",
+    "issn_l": "1078-8956",
+    "field": "",
+    "works_count": 16591,
+    "cited_by_count": 2556179
+  },
+  {
+    "id": "https://openalex.org/S203437272",
+    "name": "Asian Pacific Journal of Tropical Medicine",
+    "issn_l": "1995-7645",
+    "field": "",
+    "works_count": 2719,
+    "cited_by_count": 54876
+  },
+  {
+    "id": "https://openalex.org/S203465130",
+    "name": "Chemosphere",
+    "issn_l": "0045-6535",
+    "field": "",
+    "works_count": 51181,
+    "cited_by_count": 2394710
+  },
+  {
+    "id": "https://openalex.org/S204609040",
+    "name": "Journal of Colloid and Interface Science",
+    "issn_l": "0021-9797",
+    "field": "",
+    "works_count": 50494,
+    "cited_by_count": 2120809
+  },
+  {
+    "id": "https://openalex.org/S205050996",
+    "name": "The Journal of Organic Chemistry",
+    "issn_l": "0022-3263",
+    "field": "",
+    "works_count": 103211,
+    "cited_by_count": 3321250
+  },
+  {
+    "id": "https://openalex.org/S205231332",
+    "name": "Astronomy and Astrophysics",
+    "issn_l": "0004-6361",
+    "field": "",
+    "works_count": 54947,
+    "cited_by_count": 2332137
+  },
+  {
+    "id": "https://openalex.org/S205775358",
+    "name": "The Journal of Clinical Endocrinology & Metabolism",
+    "issn_l": "0021-972X",
+    "field": "",
+    "works_count": 52375,
+    "cited_by_count": 3317907
+  },
+  {
+    "id": "https://openalex.org/S207178839",
+    "name": "Journal of Geophysical Research Atmospheres",
+    "issn_l": "0148-0227",
+    "field": "",
+    "works_count": 98964,
+    "cited_by_count": 6700322
+  },
+  {
+    "id": "https://openalex.org/S2090548",
+    "name": "The Journal of Physiology",
+    "issn_l": "0022-3751",
+    "field": "",
+    "works_count": 46290,
+    "cited_by_count": 2685285
+  },
+  {
+    "id": "https://openalex.org/S21442059",
+    "name": "Bioresource Technology",
+    "issn_l": "0960-8524",
+    "field": "",
+    "works_count": 35401,
+    "cited_by_count": 2505248
+  },
+  {
+    "id": "https://openalex.org/S21749381",
+    "name": "Cellular and Molecular Biology",
+    "issn_l": "0145-5680",
+    "field": "",
+    "works_count": 3044,
+    "cited_by_count": 18668
+  },
+  {
+    "id": "https://openalex.org/S22947807",
+    "name": "The Journal of Experimental Medicine",
+    "issn_l": "0022-1007",
+    "field": "",
+    "works_count": 26251,
+    "cited_by_count": 3288967
+  },
+  {
+    "id": "https://openalex.org/S2298632",
+    "name": "Nature Neuroscience",
+    "issn_l": "1097-6256",
+    "field": "",
+    "works_count": 8169,
+    "cited_by_count": 1641683
+  },
+  {
+    "id": "https://openalex.org/S23254222",
+    "name": "American Economic Review",
+    "issn_l": "0002-8282",
+    "field": "",
+    "works_count": 10118,
+    "cited_by_count": 1790291
+  },
+  {
+    "id": "https://openalex.org/S24459064",
+    "name": "The Journal of Physical Chemistry",
+    "issn_l": "0022-3654",
+    "field": "",
+    "works_count": 56794,
+    "cited_by_count": 2268849
+  },
+  {
+    "id": "https://openalex.org/S24807848",
+    "name": "Physical Review Letters",
+    "issn_l": "0031-9007",
+    "field": "",
+    "works_count": 146098,
+    "cited_by_count": 13395983
+  },
+  {
+    "id": "https://openalex.org/S2481244646",
+    "name": "RSC Advances",
+    "issn_l": "2046-2069",
+    "field": "",
+    "works_count": 82661,
+    "cited_by_count": 2188163
+  },
+  {
+    "id": "https://openalex.org/S2484704948",
+    "name": "Frontiers in Microbiology",
+    "issn_l": "1664-302X",
+    "field": "",
+    "works_count": 41255,
+    "cited_by_count": 1470289
+  },
+  {
+    "id": "https://openalex.org/S2485537415",
+    "name": "IEEE Access",
+    "issn_l": "2169-3536",
+    "field": "",
+    "works_count": 109896,
+    "cited_by_count": 2487234
+  },
+  {
+    "id": "https://openalex.org/S2497375143",
+    "name": "Energy",
+    "issn_l": "0360-5442",
+    "field": "",
+    "works_count": 44310,
+    "cited_by_count": 1826986
+  },
+  {
+    "id": "https://openalex.org/S2595292759",
+    "name": "Frontiers in Immunology",
+    "issn_l": "1664-3224",
+    "field": "",
+    "works_count": 55315,
+    "cited_by_count": 1657456
+  },
+  {
+    "id": "https://openalex.org/S2596394214",
+    "name": "Frontiers in Oncology",
+    "issn_l": "2234-943X",
+    "field": "",
+    "works_count": 37450,
+    "cited_by_count": 635844
+  },
+  {
+    "id": "https://openalex.org/S2597340651",
+    "name": "Frontiers in Genetics",
+    "issn_l": "1664-8021",
+    "field": "",
+    "works_count": 17112,
+    "cited_by_count": 369079
+  },
+  {
+    "id": "https://openalex.org/S25983388",
+    "name": "American Journal of Translational Research",
+    "issn_l": "1943-8141",
+    "field": "",
+    "works_count": 2059,
+    "cited_by_count": 3215
+  },
+  {
+    "id": "https://openalex.org/S2737969411",
+    "name": "Journal of Clinical Medicine",
+    "issn_l": "2077-0383",
+    "field": "",
+    "works_count": 51225,
+    "cited_by_count": 664213
+  },
+  {
+    "id": "https://openalex.org/S2764375719",
+    "name": "Choice Reviews Online",
+    "issn_l": "0009-4978",
+    "field": "",
+    "works_count": 195801,
+    "cited_by_count": 12901294
+  },
+  {
+    "id": "https://openalex.org/S2764437742",
+    "name": "Journal of Materials Chemistry A",
+    "issn_l": "2050-7488",
+    "field": "",
+    "works_count": 39309,
+    "cited_by_count": 2042881
+  },
+  {
+    "id": "https://openalex.org/S28349394",
+    "name": "Journal of Dairy Science",
+    "issn_l": "0022-0302",
+    "field": "",
+    "works_count": 42764,
+    "cited_by_count": 1559856
+  },
+  {
+    "id": "https://openalex.org/S28966261",
+    "name": "Medicine",
+    "issn_l": "0025-7974",
+    "field": "",
+    "works_count": 50782,
+    "cited_by_count": 852401
+  },
+  {
+    "id": "https://openalex.org/S29607422",
+    "name": "Current Science",
+    "issn_l": "0011-3891",
+    "field": "",
+    "works_count": 9489,
+    "cited_by_count": 115343
+  },
+  {
+    "id": "https://openalex.org/S29980478",
+    "name": "Construction and Building Materials",
+    "issn_l": "0950-0618",
+    "field": "",
+    "works_count": 48318,
+    "cited_by_count": 2107345
+  },
+  {
+    "id": "https://openalex.org/S29984966",
+    "name": "Journal of Personality and Social Psychology",
+    "issn_l": "0022-3514",
+    "field": "",
+    "works_count": 17537,
+    "cited_by_count": 3276220
+  },
+  {
+    "id": "https://openalex.org/S30122339",
+    "name": "Neuroscience",
+    "issn_l": "0306-4522",
+    "field": "",
+    "works_count": 29550,
+    "cited_by_count": 1599648
+  },
+  {
+    "id": "https://openalex.org/S30525748",
+    "name": "The Journal of Urology",
+    "issn_l": "0022-5347",
+    "field": "",
+    "works_count": 153598,
+    "cited_by_count": 2299587
+  },
+  {
+    "id": "https://openalex.org/S316438",
+    "name": "Chemical Society Reviews",
+    "issn_l": "0306-0012",
+    "field": "",
+    "works_count": 9407,
+    "cited_by_count": 2419523
+  },
+  {
+    "id": "https://openalex.org/S35917800",
+    "name": "Ecology",
+    "issn_l": "0012-9658",
+    "field": "",
+    "works_count": 25930,
+    "cited_by_count": 2156115
+  },
+  {
+    "id": "https://openalex.org/S36624081",
+    "name": "Geophysical Research Letters",
+    "issn_l": "0094-8276",
+    "field": "",
+    "works_count": 53025,
+    "cited_by_count": 2782541
+  },
+  {
+    "id": "https://openalex.org/S38008053",
+    "name": "The Journal of Immunology",
+    "issn_l": "0022-1767",
+    "field": "",
+    "works_count": 105666,
+    "cited_by_count": 5139895
+  },
+  {
+    "id": "https://openalex.org/S3880285",
+    "name": "Science",
+    "issn_l": "0036-8075",
+    "field": "",
+    "works_count": 387060,
+    "cited_by_count": 22713984
+  },
+  {
+    "id": "https://openalex.org/S41143188",
+    "name": "Chemical Reviews",
+    "issn_l": "0009-2665",
+    "field": "",
+    "works_count": 10631,
+    "cited_by_count": 4092240
+  },
+  {
+    "id": "https://openalex.org/S4210172715",
+    "name": "Cochrane Database of Systematic Reviews",
+    "issn_l": "1464-780X",
+    "field": "",
+    "works_count": 28167,
+    "cited_by_count": 1774711
+  },
+  {
+    "id": "https://openalex.org/S4210174675",
+    "name": "Physical review. B, Condensed matter",
+    "issn_l": "0163-1829",
+    "field": "",
+    "works_count": 93139,
+    "cited_by_count": 5511249
+  },
+  {
+    "id": "https://openalex.org/S4210176780",
+    "name": "Biomedical Research - India",
+    "issn_l": "0970-938X",
+    "field": "",
+    "works_count": 832,
+    "cited_by_count": 3030
+  },
+  {
+    "id": "https://openalex.org/S4210186231",
+    "name": "The Journal of Comparative Neurology",
+    "issn_l": "0021-9967",
+    "field": "",
+    "works_count": 25420,
+    "cited_by_count": 1678931
+  },
+  {
+    "id": "https://openalex.org/S4210190737",
+    "name": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D. Particles and fields",
+    "issn_l": "0556-2821",
+    "field": "",
+    "works_count": 41343,
+    "cited_by_count": 2084760
+  },
+  {
+    "id": "https://openalex.org/S4210192031",
+    "name": "Mathematics",
+    "issn_l": "2227-7390",
+    "field": "",
+    "works_count": 27938,
+    "cited_by_count": 226170
+  },
+  {
+    "id": "https://openalex.org/S4210194812",
+    "name": "Nuclear Physics B",
+    "issn_l": "0550-3213",
+    "field": "",
+    "works_count": 31581,
+    "cited_by_count": 1766757
+  },
+  {
+    "id": "https://openalex.org/S4210197683",
+    "name": "Medical Entomology and Zoology",
+    "issn_l": "0424-7086",
+    "field": "",
+    "works_count": 1871270,
+    "cited_by_count": 13155152
+  },
+  {
+    "id": "https://openalex.org/S4210200754",
+    "name": "Angewandte Chemie",
+    "issn_l": "0044-8249",
+    "field": "",
+    "works_count": 142052,
+    "cited_by_count": 1820757
+  },
+  {
+    "id": "https://openalex.org/S4210201879",
+    "name": "Processes",
+    "issn_l": "2227-9717",
+    "field": "",
+    "works_count": 20912,
+    "cited_by_count": 235704
+  },
+  {
+    "id": "https://openalex.org/S4210202905",
+    "name": "Electronics",
+    "issn_l": "2079-9292",
+    "field": "",
+    "works_count": 30024,
+    "cited_by_count": 342727
+  },
+  {
+    "id": "https://openalex.org/S4210205812",
+    "name": "Applied Sciences",
+    "issn_l": "2076-3417",
+    "field": "",
+    "works_count": 90178,
+    "cited_by_count": 1101582
+  },
+  {
+    "id": "https://openalex.org/S4210206803",
+    "name": "Archives of Internal Medicine",
+    "issn_l": "0003-9926",
+    "field": "",
+    "works_count": 45271,
+    "cited_by_count": 1680400
+  },
+  {
+    "id": "https://openalex.org/S4210210554",
+    "name": "Physical review. D. Particles, fields, gravitation, and cosmology/Physical review. D, Particles, fields, gravitation, and cosmology",
+    "issn_l": "1550-2368",
+    "field": "",
+    "works_count": 35178,
+    "cited_by_count": 1829232
+  },
+  {
+    "id": "https://openalex.org/S42294715",
+    "name": "PLANT PHYSIOLOGY",
+    "issn_l": "0032-0889",
+    "field": "",
+    "works_count": 37789,
+    "cited_by_count": 2883662
+  },
+  {
+    "id": "https://openalex.org/S42323631",
+    "name": "Applied Surface Science",
+    "issn_l": "0169-4332",
+    "field": "",
+    "works_count": 69027,
+    "cited_by_count": 2042943
+  },
+  {
+    "id": "https://openalex.org/S43295729",
+    "name": "Remote Sensing",
+    "issn_l": "2072-4292",
+    "field": "",
+    "works_count": 42445,
+    "cited_by_count": 1106089
+  },
+  {
+    "id": "https://openalex.org/S43643205",
+    "name": "Journal of Cellular Physiology",
+    "issn_l": "0021-9541",
+    "field": "",
+    "works_count": 19942,
+    "cited_by_count": 823235
+  },
+  {
+    "id": "https://openalex.org/S4393911389",
+    "name": "BMJ",
+    "issn_l": "0007-1447",
+    "field": "",
+    "works_count": 389469,
+    "cited_by_count": 3983375
+  },
+  {
+    "id": "https://openalex.org/S4394736638",
+    "name": "Journal of the American Statistical Association",
+    "issn_l": "0162-1459",
+    "field": "",
+    "works_count": 28076,
+    "cited_by_count": 2546228
+  },
+  {
+    "id": "https://openalex.org/S44425019",
+    "name": "Biochemical Journal",
+    "issn_l": "0264-6021",
+    "field": "",
+    "works_count": 37865,
+    "cited_by_count": 2063753
+  },
+  {
+    "id": "https://openalex.org/S44567922",
+    "name": "Chemical Physics Letters",
+    "issn_l": "0009-2614",
+    "field": "",
+    "works_count": 68156,
+    "cited_by_count": 1950171
+  },
+  {
+    "id": "https://openalex.org/S45757444",
+    "name": "Neuron",
+    "issn_l": "0896-6273",
+    "field": "",
+    "works_count": 14464,
+    "cited_by_count": 2816132
+  },
+  {
+    "id": "https://openalex.org/S46058472",
+    "name": "Journal of Molecular Biology",
+    "issn_l": "0022-2836",
+    "field": "",
+    "works_count": 37781,
+    "cited_by_count": 3035668
+  },
+  {
+    "id": "https://openalex.org/S46763546",
+    "name": "Academy of Management Review",
+    "issn_l": "0363-7425",
+    "field": "",
+    "works_count": 5689,
+    "cited_by_count": 1668838
+  },
+  {
+    "id": "https://openalex.org/S47215897",
+    "name": "Antimicrobial Agents and Chemotherapy",
+    "issn_l": "0066-4804",
+    "field": "",
+    "works_count": 33911,
+    "cited_by_count": 1871205
+  },
+  {
+    "id": "https://openalex.org/S4789869",
+    "name": "Contemporary Sociology A Journal of Reviews",
+    "issn_l": "0094-3061",
+    "field": "",
+    "works_count": 26726,
+    "cited_by_count": 2260571
+  },
+  {
+    "id": "https://openalex.org/S48849333",
+    "name": "The Plant Cell",
+    "issn_l": "1040-4651",
+    "field": "",
+    "works_count": 12445,
+    "cited_by_count": 1571004
+  },
+  {
+    "id": "https://openalex.org/S48860480",
+    "name": "International Journal of Hydrogen Energy",
+    "issn_l": "0360-3199",
+    "field": "",
+    "works_count": 59876,
+    "cited_by_count": 2171054
+  },
+  {
+    "id": "https://openalex.org/S49861241",
+    "name": "The Lancet",
+    "issn_l": "0099-5355",
+    "field": "",
+    "works_count": 475691,
+    "cited_by_count": 10358130
+  },
+  {
+    "id": "https://openalex.org/S49878492",
+    "name": "Diabetes Care",
+    "issn_l": "0149-5992",
+    "field": "",
+    "works_count": 22357,
+    "cited_by_count": 2027296
+  },
+  {
+    "id": "https://openalex.org/S50280174",
+    "name": "Radiology",
+    "issn_l": "0033-8419",
+    "field": "",
+    "works_count": 63020,
+    "cited_by_count": 2403114
+  },
+  {
+    "id": "https://openalex.org/S52395412",
+    "name": "Bioinformatics",
+    "issn_l": "1367-4803",
+    "field": "",
+    "works_count": 19565,
+    "cited_by_count": 2809777
+  },
+  {
+    "id": "https://openalex.org/S52566953",
+    "name": "Water Research",
+    "issn_l": "0043-1354",
+    "field": "",
+    "works_count": 31515,
+    "cited_by_count": 2280818
+  },
+  {
+    "id": "https://openalex.org/S53087977",
+    "name": "Journal of Clinical Microbiology",
+    "issn_l": "0095-1137",
+    "field": "",
+    "works_count": 33469,
+    "cited_by_count": 1913180
+  },
+  {
+    "id": "https://openalex.org/S5353659",
+    "name": "The Journal of Finance",
+    "issn_l": "0022-1082",
+    "field": "",
+    "works_count": 16109,
+    "cited_by_count": 1945625
+  },
+  {
+    "id": "https://openalex.org/S53807158",
+    "name": "Journal of Cellular Biochemistry",
+    "issn_l": "0730-2312",
+    "field": "",
+    "works_count": 16512,
+    "cited_by_count": 546529
+  },
+  {
+    "id": "https://openalex.org/S5382288",
+    "name": "International Journal of Cancer",
+    "issn_l": "0020-7136",
+    "field": "",
+    "works_count": 33347,
+    "cited_by_count": 1679895
+  },
+  {
+    "id": "https://openalex.org/S54542293",
+    "name": "The Journal of Infectious Diseases",
+    "issn_l": "0022-1899",
+    "field": "",
+    "works_count": 38949,
+    "cited_by_count": 1910639
+  },
+  {
+    "id": "https://openalex.org/S54862371",
+    "name": "Physical Review",
+    "issn_l": "0031-899X",
+    "field": "",
+    "works_count": 49722,
+    "cited_by_count": 3159467
+  },
+  {
+    "id": "https://openalex.org/S5555990",
+    "name": "Journal of Neuroscience",
+    "issn_l": "0270-6474",
+    "field": "",
+    "works_count": 42287,
+    "cited_by_count": 5171365
+  },
+  {
+    "id": "https://openalex.org/S58516903",
+    "name": "Journal of Cleaner Production",
+    "issn_l": "0959-6526",
+    "field": "",
+    "works_count": 49821,
+    "cited_by_count": 2968550
+  },
+  {
+    "id": "https://openalex.org/S60865174",
+    "name": "Journal of the American College of Cardiology",
+    "issn_l": "0735-1097",
+    "field": "",
+    "works_count": 132786,
+    "cited_by_count": 3164075
+  },
+  {
+    "id": "https://openalex.org/S62018274",
+    "name": "Journal of International Medical Research",
+    "issn_l": "0300-0605",
+    "field": "",
+    "works_count": 10833,
+    "cited_by_count": 141190
+  },
+  {
+    "id": "https://openalex.org/S62468778",
+    "name": "New England Journal of Medicine",
+    "issn_l": "0028-4793",
+    "field": "",
+    "works_count": 190392,
+    "cited_by_count": 12342979
+  },
+  {
+    "id": "https://openalex.org/S62532593",
+    "name": "Stroke",
+    "issn_l": "0039-2499",
+    "field": "",
+    "works_count": 50017,
+    "cited_by_count": 2042608
+  },
+  {
+    "id": "https://openalex.org/S64016596",
+    "name": "Acta Materialia",
+    "issn_l": "1359-6454",
+    "field": "",
+    "works_count": 21506,
+    "cited_by_count": 1595373
+  },
+  {
+    "id": "https://openalex.org/S64187185",
+    "name": "Nature Communications",
+    "issn_l": "2041-1723",
+    "field": "",
+    "works_count": 90390,
+    "cited_by_count": 7546747
+  },
+  {
+    "id": "https://openalex.org/S64311837",
+    "name": "Carbohydrate Polymers",
+    "issn_l": "0144-8617",
+    "field": "",
+    "works_count": 26900,
+    "cited_by_count": 1565899
+  },
+  {
+    "id": "https://openalex.org/S64516541",
+    "name": "European journal of medical research",
+    "issn_l": "0949-2321",
+    "field": "",
+    "works_count": 5251,
+    "cited_by_count": 49831
+  },
+  {
+    "id": "https://openalex.org/S65932378",
+    "name": "Genetics",
+    "issn_l": "0016-6731",
+    "field": "",
+    "works_count": 22302,
+    "cited_by_count": 1670249
+  },
+  {
+    "id": "https://openalex.org/S66104727",
+    "name": "Chemistry of Materials",
+    "issn_l": "0897-4756",
+    "field": "",
+    "works_count": 28371,
+    "cited_by_count": 2147185
+  },
+  {
+    "id": "https://openalex.org/S67393510",
+    "name": "Angewandte Chemie International Edition",
+    "issn_l": "1433-7851",
+    "field": "",
+    "works_count": 81427,
+    "cited_by_count": 6576740
+  },
+  {
+    "id": "https://openalex.org/S67716761",
+    "name": "Journal of Alloys and Compounds",
+    "issn_l": "0925-8388",
+    "field": "",
+    "works_count": 93138,
+    "cited_by_count": 2395544
+  },
+  {
+    "id": "https://openalex.org/S6791298",
+    "name": "Physical Review B",
+    "issn_l": "1098-0121",
+    "field": "",
+    "works_count": 70313,
+    "cited_by_count": 3213124
+  },
+  {
+    "id": "https://openalex.org/S68497187",
+    "name": "Renewable and Sustainable Energy Reviews",
+    "issn_l": "1364-0321",
+    "field": "",
+    "works_count": 16883,
+    "cited_by_count": 2034101
+  },
+  {
+    "id": "https://openalex.org/S68911691",
+    "name": "Chemistry - A European Journal",
+    "issn_l": "0947-6539",
+    "field": "",
+    "works_count": 52882,
+    "cited_by_count": 1786024
+  },
+  {
+    "id": "https://openalex.org/S71285955",
+    "name": "American Journal of Clinical Nutrition",
+    "issn_l": "0002-9165",
+    "field": "",
+    "works_count": 29027,
+    "cited_by_count": 2085942
+  },
+  {
+    "id": "https://openalex.org/S72350973",
+    "name": "Clinical Infectious Diseases",
+    "issn_l": "1058-4838",
+    "field": "",
+    "works_count": 37426,
+    "cited_by_count": 2159488
+  },
+  {
+    "id": "https://openalex.org/S7538555",
+    "name": "Geochimica et Cosmochimica Acta",
+    "issn_l": "0016-7037",
+    "field": "",
+    "works_count": 26244,
+    "cited_by_count": 1979000
+  },
+  {
+    "id": "https://openalex.org/S75627607",
+    "name": "Psychological Bulletin",
+    "issn_l": "0033-2909",
+    "field": "",
+    "works_count": 11599,
+    "cited_by_count": 1909053
+  },
+  {
+    "id": "https://openalex.org/S75741262",
+    "name": "Langmuir",
+    "issn_l": "0743-7463",
+    "field": "",
+    "works_count": 60855,
+    "cited_by_count": 2730375
+  },
+  {
+    "id": "https://openalex.org/S76900504",
+    "name": "CHEST Journal",
+    "issn_l": "0012-3692",
+    "field": "",
+    "works_count": 85219,
+    "cited_by_count": 1966291
+  },
+  {
+    "id": "https://openalex.org/S77047749",
+    "name": "The Journal of Chemical Physics",
+    "issn_l": "0021-9606",
+    "field": "",
+    "works_count": 151680,
+    "cited_by_count": 7856581
+  },
+  {
+    "id": "https://openalex.org/S77494981",
+    "name": "PEDIATRICS",
+    "issn_l": "0031-4005",
+    "field": "",
+    "works_count": 62293,
+    "cited_by_count": 2777646
+  },
+  {
+    "id": "https://openalex.org/S7858788",
+    "name": "Analytical Biochemistry",
+    "issn_l": "0003-2697",
+    "field": "",
+    "works_count": 31331,
+    "cited_by_count": 2285155
+  },
+  {
+    "id": "https://openalex.org/S79704628",
+    "name": "Neurology",
+    "issn_l": "0028-3878",
+    "field": "",
+    "works_count": 96832,
+    "cited_by_count": 3257958
+  },
+  {
+    "id": "https://openalex.org/S81455967",
+    "name": "Molecular and Cellular Biology",
+    "issn_l": "0270-7306",
+    "field": "",
+    "works_count": 32078,
+    "cited_by_count": 2733227
+  },
+  {
+    "id": "https://openalex.org/S86558740",
+    "name": "Development",
+    "issn_l": "0950-1991",
+    "field": "",
+    "works_count": 20625,
+    "cited_by_count": 1945543
+  },
+  {
+    "id": "https://openalex.org/S86852077",
+    "name": "The Science of The Total Environment",
+    "issn_l": "0048-9697",
+    "field": "",
+    "works_count": 83907,
+    "cited_by_count": 4047326
+  },
+  {
+    "id": "https://openalex.org/S8802318",
+    "name": "Annals of the New York Academy of Sciences",
+    "issn_l": "0077-8923",
+    "field": "",
+    "works_count": 70356,
+    "cited_by_count": 2119316
+  },
+  {
+    "id": "https://openalex.org/S93356601",
+    "name": "American Journal of Respiratory and Critical Care Medicine",
+    "issn_l": "1073-449X",
+    "field": "",
+    "works_count": 35597,
+    "cited_by_count": 1896053
+  },
+  {
+    "id": "https://openalex.org/S95464858",
+    "name": "Econometrica",
+    "issn_l": "0012-9682",
+    "field": "",
+    "works_count": 7290,
+    "cited_by_count": 1618546
+  },
+  {
+    "id": "https://openalex.org/S95739953",
+    "name": "The Journal of Physical Chemistry C",
+    "issn_l": "1932-7447",
+    "field": "",
+    "works_count": 59273,
+    "cited_by_count": 2333384
+  },
+  {
+    "id": "https://openalex.org/S96410829",
+    "name": "The Journal of Cell Biology",
+    "issn_l": "0021-9525",
+    "field": "",
+    "works_count": 28971,
+    "cited_by_count": 3545804
+  },
+  {
+    "id": "https://openalex.org/S96615428",
+    "name": "Journal of Virology",
+    "issn_l": "0022-538X",
+    "field": "",
+    "works_count": 52305,
+    "cited_by_count": 3466631
+  },
+  {
+    "id": "https://openalex.org/S96638545",
+    "name": "Brain Research",
+    "issn_l": "0006-8993",
+    "field": "",
+    "works_count": 66633,
+    "cited_by_count": 3056170
+  },
+  {
+    "id": "https://openalex.org/S98010888",
+    "name": "JNCI Journal of the National Cancer Institute",
+    "issn_l": "0027-8874",
+    "field": "",
+    "works_count": 32724,
+    "cited_by_count": 1578654
+  },
+  {
+    "id": "https://openalex.org/S98026630",
+    "name": "Food Chemistry",
+    "issn_l": "0308-8146",
+    "field": "",
+    "works_count": 51651,
+    "cited_by_count": 2708599
+  },
+  {
+    "id": "https://openalex.org/S98085912",
+    "name": "Biophysical Journal",
+    "issn_l": "0006-3495",
+    "field": "",
+    "works_count": 83972,
+    "cited_by_count": 1668417
+  },
+  {
+    "id": "https://openalex.org/S98455728",
+    "name": "Sensors and Actuators B Chemical",
+    "issn_l": "0925-4005",
+    "field": "",
+    "works_count": 38518,
+    "cited_by_count": 1621976
+  },
+  {
+    "id": "https://openalex.org/S99352657",
+    "name": "Advanced Materials",
+    "issn_l": "0935-9648",
+    "field": "",
+    "works_count": 44772,
+    "cited_by_count": 4802010
+  }
+]

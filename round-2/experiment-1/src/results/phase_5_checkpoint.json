@@ -1,0 +1,27 @@
+{
+  "phase": 5,
+  "n_field_communities": 44,
+  "spearman_rho": 0.583694213470295,
+  "spearman_p": 1.7253994399435674e-22,
+  "recommendation": "use_field_aware",
+  "degree_null_auc_stacking": 0.617984693877551,
+  "ci_deg_stacking": [
+    0.3515701556819978,
+    0.8761264583167239
+  ],
+  "degree_null_auc_all": 0.8200261780104713,
+  "ci_deg_all": [
+    0.7201525538171908,
+    0.9028849396893349
+  ],
+  "field_null_auc_stacking": 0.7181122448979592,
+  "ci_fld_stacking": [
+    0.4590395771878073,
+    0.9224363874658641
+  ],
+  "field_null_auc_all": 0.7590314136125654,
+  "ci_fld_all": [
+    0.6623916702478155,
+    0.8439908132720235
+  ]
+}

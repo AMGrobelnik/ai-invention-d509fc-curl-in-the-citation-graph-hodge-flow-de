@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "method_name": "Hodge-Curl Cartel Detector v2 (Real-Data & Clean-Base Validation)",
+    "description": "Combinatorial Hodge decomposition of journal citation net-flows detects cyclic citation patterns. 6-phase evaluation: real data AUC, CIDRE comparison, synthetic validation, clean-base injection, field...",
+    "n_journals": 231,
+    "n_stacking_positives": 7,
+    "n_all_suppressed_positives": 40,
+    "primary_label_name": "stacking_only",
+    "phase1_auc_table": {
+      "hodge_grad_residual": {
+        "auc_stacking_only": 0.45408163265306123,
+        "ci_stacking": [
+          0.15197663766025957,
+          0.7522409046214357
+        ],
+        "auc_all_suppressed": 0.11321989528795813,
+        "ci_all": [
+          0.04771162367811715,
+          0.1982552868522256
+        ],
+        "auc_primary": 0.45408163265306123,
+        "ci_primary": [
+          0.15197663766025957,
+          0.7522409046214357
+        ]
+      },
+      "hodge_curl_raw": {
+        "auc_stacking_only": 0.43048469387755106,
+        "ci_stacking": [
+          0.14399074074074072,
+          0.725925925925926
+        ],
+        "auc_all_suppressed": 0.11151832460732987,
+        "ci_all": [
+          0.04774870746206373,
+          0.19501781559045953
+        ],
+        "auc_primary": 0.43048469387755106,
+        "ci_primary": [
+          0.14399074074074072,
+          0.725925925925926
+        ]
+      },
+      "hodge_prestige": {
+        "auc_stacking_only": 0.5510204081632654,
+        "ci_stacking": [
+          0.26277805933491877,
+          0.8125009258898289
+        ],
+        "auc_all_suppressed": 0.5912303664921466,
+        "ci_all": [
+          0.5105906413612565,
+          0.6686074668208938
+        ],
+        "auc_primary": 0.5510204081632654,
+        "ci_primary": [
+          0.26277805933491877,
+          0.8125009258898289
+        ]
+      }
+    },
+    "phase2_cidre": {
+      "method_used": "cidre_poisson_spectral_fallback",
+      "n_groups": 179,
+      "auc_stacking": 0.34311224489795916,
+      "auc_all": 0.11230366492146598
+    },
+    "phase3_synthetic_n_c10": {
+      "hodge_grad_auc": 0.7366666666666668,
+      "hodge_curl_auc": 0.5582683982683982,
+      "cidre_auc": 0.8450865800865801,
+      "iter1_approx_cidre_auc": 0.626,
+      "energy_fractions": {
+        "gradient": 0.04281665032115864,
+        "curl": 0.7796832993189189,
+        "harmonic": 0.17750005035970415
+      }
+    },
+    "phase4_injection_summary": {
+      "n_conditions": 40,
+      "detectability_thresholds": {
+        "cyclic_k3_grad_residual_thresh_w0.7": null,
+        "cyclic_k3_curl_raw_thresh_w0.7": null,
+        "cyclic_k4_grad_residual_thresh_w0.7": null,
+        "cyclic_k4_curl_raw_thresh_w0.7": null,
+        "cyclic_k5_grad_residual_thresh_w0.7": null,
+        "cyclic_k5_curl_raw_thresh_w0.7": null,
+        "cyclic_k10_grad_residual_thresh_w0.7": null,
+        "cyclic_k10_curl_raw_thresh_w0.7": null,
+        "reciprocal_k3_grad_residual_thresh_w0.7": null,
+        "reciprocal_k3_curl_raw_thresh_w0.7": null,
+        "reciprocal_k4_grad_residual_thresh_w0.7": null,
+        "reciprocal_k4_curl_raw_thresh_w0.7": null,
+        "reciprocal_k5_grad_residual_thresh_w0.7": null,
+        "reciprocal_k5_curl_raw_thresh_w0.7": null,
+        "reciprocal_k10_grad_residual_thresh_w0.7": null,
+        "reciprocal_k10_curl_raw_thresh_w0.7": null
+      },
+      "note": "AUC>0.7 threshold w_factor for cyclic k=3 (triangle-based detection)"
+    },
+    "phase5_null_model": {
+      "n_field_communities": 44,
+      "spearman_rho": 0.583694213470295,
+      "recommendation": "use_field_aware",
+      "degree_null_auc_stacking": 0.617984693877551,
+      "field_null_auc_stacking": 0.7181122448979592
+    },
+    "phase6_energy": {
+      "real_gradient": 0.2300716068108262,
+      "real_curl": 0.7699283931455518,
+      "synth_gradient": 0.04281665032115864,
+      "synth_curl": 0.7796832993189189,
+      "delta_curl": 0.00975490617336705
+    },
+    "combined_auc_primary_label": {
+      "hodge_grad_residual": 0.45408163265306123,
+      "hodge_curl_raw": 0.43048469387755106,
+      "cidre": 0.34311224489795916,
+      "curl_z_degree_null": 0.617984693877551,
+      "curl_z_field_null": 0.7181122448979592
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "openalex_real_231journal_jcr_suppression",
+      "examples": [
+        {
+          "input": "Journal: BioMed Research International. ISSN: 2314-6133. Works count: 26831. Cited by count: 797532. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (deg...",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "BioMed Research International",
+          "metadata_openalex_id": "https://openalex.org/S1010394304",
+          "metadata_issn_l": "2314-6133",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Sustainability. ISSN: 2071-1050. Works count: 107084. Cited by count: 2229076. HodgeRank prestige: -11.7754. Gradient residual: 24.9631. Triangle curl raw: 57.8200. Curl z-score (degree-null)...",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "24.963143",
+          "predict_hodge_curl_raw": "57.820026",
+          "predict_hodge_prestige": "-11.775445",
+          "predict_cidre": "4.338835",
+          "predict_curl_z_degree_null": "-3.327478",
+          "predict_curl_z_field_null": "-2.840466",
+          "metadata_journal_name": "Sustainability",
+          "metadata_openalex_id": "https://openalex.org/S10134376",
+          "metadata_issn_l": "2071-1050",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Sensors. ISSN: 1424-8220. Works count: 79869. Cited by count: 1875484. HodgeRank prestige: -8.7890. Gradient residual: 20.0659. Triangle curl raw: 46.9768. Curl z-score (degree-null): -5.3491...",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "20.065902",
+          "predict_hodge_curl_raw": "46.976827",
+          "predict_hodge_prestige": "-8.788988",
+          "predict_cidre": "12.816471",
+          "predict_curl_z_degree_null": "-5.349134",
+          "predict_curl_z_field_null": "-3.944372",
+          "metadata_journal_name": "Sensors",
+          "metadata_openalex_id": "https://openalex.org/S101949793",
+          "metadata_issn_l": "1424-8220",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        }
+      ]
+    }
+  ]
+}
