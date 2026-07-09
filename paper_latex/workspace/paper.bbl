@@ -1,0 +1,118 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Clarivate Analytics}(2022)]{JCRData2022}
+{Clarivate Analytics}.
+\newblock {Journal Citation Reports}: Suppressed and discontinued journals.
+\newblock
+  \url{https://clarivate.com/products/scientific-and-academic-research/research-analytics-evaluations-and-bibliometrics/journal-citation-reports/},
+  2022.
+\newblock Annual suppression announcements, 2018--2022.
+
+\bibitem[Kojaku et~al.(2021)Kojaku, Livan, and Masuda]{Kojaku2020}
+Sadamori Kojaku, Giacomo Livan, and Naoki Masuda.
+\newblock Detecting anomalous citation groups in journal networks.
+\newblock \emph{Scientific Reports}, 11:\penalty0 14524, 2021.
+\newblock \doi{10.1038/s41598-021-93025-5}.
+
+\bibitem[Jiang et~al.(2011)Jiang, Lim, Yao, and Ye]{Jiang2008}
+Xiaoye Jiang, Lek-Heng Lim, Y.~Yao, and Y.~Ye.
+\newblock Statistical ranking and combinatorial {H}odge theory.
+\newblock volume 127, pages 203--244, 2011.
+\newblock \doi{10.1007/s10107-010-0419-x}.
+
+\bibitem[Pinski and Narin(1976)]{Pinski1976}
+Gabriel Pinski and Francis Narin.
+\newblock Citation influence for journal aggregates of scientific publications:
+  {T}heory, with application to the literature of physics.
+\newblock \emph{Information Processing \& Management}, 12\penalty0
+  (5--6):\penalty0 297--312, 1976.
+
+\bibitem[West et~al.(2010)West, Bergstrom, and Bergstrom]{West2010}
+Jevin~D. West, Theodore~C. Bergstrom, and Carl~T. Bergstrom.
+\newblock The {E}igenfactor metrics: {A} network approach to assessing
+  scholarly journals.
+\newblock \emph{Journal of the American Society for Information Science and
+  Technology}, 61\penalty0 (9):\penalty0 1803--1812, 2010.
+
+\bibitem[Bergstrom(2007)]{Bergstrom2007}
+Carl~T. Bergstrom.
+\newblock Measuring the value and prestige of scholarly journals.
+\newblock \emph{BioScience}, 57\penalty0 (10):\penalty0 822--823, 2007.
+
+\bibitem[Jolly et~al.(2020)Jolly, Jain, Bera, and Chakraborty]{Jolly2020}
+Baani Leen~Kaur Jolly, Lavina Jain, Debajyoti Bera, and Tanmoy Chakraborty.
+\newblock Unsupervised anomaly detection in journal-level citation networks.
+\newblock In \emph{Proceedings of the ACM/IEEE Joint Conference on Digital
+  Libraries}, 2020.
+\newblock \doi{10.1145/3383583.3398531}.
+
+\bibitem[Liu et~al.(2022)Liu, Xia, Feng, Ren, and Liu]{Liu2022}
+Jiaying Liu, Feng Xia, Xuefang Feng, Jing Ren, and Huan Liu.
+\newblock Deep graph learning for anomalous citation detection.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  33\penalty0 (5):\penalty0 2543--2557, 2022.
+\newblock \doi{10.1109/TNNLS.2022.3145092}.
+
+\bibitem[Homs-Dones et~al.(2025)Homs-Dones, MacKay, Sansom, and
+  Zhou]{HomsDones2025}
+Marc Homs-Dones, Robert~S. MacKay, Bazil Sansom, and Yijie Zhou.
+\newblock Circular directional flow decomposition of networks.
+\newblock \emph{ArXiv}, abs/2506.12546, 2025.
+\newblock \doi{10.48550/arXiv.2506.12546}.
+
+\bibitem[Wand et~al.(2024)Wand, Kamps, and Iyetomi]{Wand2024}
+Tobias Wand, Oliver Kamps, and Hiroshi Iyetomi.
+\newblock Causal hierarchy in the financial market network---{U}ncovered by the
+  {H}elmholtz--{H}odge--{K}odaira decomposition.
+\newblock \emph{Entropy}, 26\penalty0 (10):\penalty0 858, 2024.
+\newblock \doi{10.3390/e26100858}.
+
+\bibitem[Frantzen and Schaub(2025)]{Frantzen2025}
+Florian Frantzen and Michael~T. Schaub.
+\newblock {HLSAD}: {H}odge {L}aplacian-based simplicial anomaly detection.
+\newblock In \emph{Proceedings of the 31st ACM SIGKDD Conference on Knowledge
+  Discovery and Data Mining}, 2025.
+\newblock \doi{10.1145/3711896.3736998}.
+
+\bibitem[Johnson et~al.(2014)Johnson, Dom{\'\i}nguez-Garc{\'\i}a, Donetti, and
+  Mu{\~n}oz]{Johnson2014}
+Samuel Johnson, Virginia Dom{\'\i}nguez-Garc{\'\i}a, Luca Donetti, and
+  Miguel~A. Mu{\~n}oz.
+\newblock Trophic coherence determines food-web stability.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 111\penalty0
+  (50):\penalty0 17923--17928, 2014.
+\newblock \doi{10.1073/pnas.1409077111}.
+
+\bibitem[MacKay et~al.(2020)MacKay, Johnson, and Sansom]{MacKay2020}
+Robert~S. MacKay, Samuel Johnson, and Bazil Sansom.
+\newblock How directed is a directed network?
+\newblock \emph{Royal Society Open Science}, 7\penalty0 (9):\penalty0 201138,
+  2020.
+\newblock \doi{10.1098/rsos.201138}.
+
+\bibitem[Mones et~al.(2014)Mones, Pollner, and Vicsek]{Mones2014}
+Enys Mones, P{\'e}ter Pollner, and Tam{\'a}s Vicsek.
+\newblock Universal hierarchical behavior of citation networks.
+\newblock \emph{Journal of Statistical Mechanics: Theory and Experiment}, page
+  P05023, 2014.
+
+\bibitem[Priem et~al.(2022)Priem, Piwowar, and Orr]{Priem2022}
+Jason Priem, Heather~A. Piwowar, and Richard Orr.
+\newblock {OpenAlex}: A fully-open index of scholarly works, authors, venues,
+  institutions, and concepts.
+\newblock \emph{ArXiv}, abs/2205.01833, 2022.
+
+\bibitem[Grobelnik(2024)]{StackingAnnotations2024}
+Andrej~M. Grobelnik.
+\newblock Annotated {JCR} citation stacking cases dataset.
+\newblock
+  \url{https://github.com/AMGrobelnik/ai-invention-d509fc-curl-in-the-citation-graph-hodge-flow-de},
+  2024.
+\newblock Annotated dataset released with this paper.
+
+\end{thebibliography}

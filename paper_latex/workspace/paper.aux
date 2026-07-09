@@ -1,0 +1,111 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{JCRData2022}
+\citation{Kojaku2020}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Jiang2008}
+\citation{Pinski1976}
+\citation{West2010,Bergstrom2007}
+\citation{Kojaku2020}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Citation Ranking Methods}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Citation Cartel Detection}{2}{subsection.2.2}\protected@file@percent }
+\citation{Jolly2020}
+\citation{Liu2022}
+\citation{Jiang2008}
+\citation{HomsDones2025}
+\citation{Wand2024}
+\citation{Frantzen2025}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces End-to-end pipeline for Hodge-based citation cartel detection. Citation counts are aggregated into a net-flow matrix, decomposed into gradient (prestige hierarchy), curl (cyclic manipulation), and harmonic (global loops) components via sparse least-squares. Three detection scores are derived: gradient residual (averaging all incident edge departures), triangle curl (averaging 3-ring circulation), and field-aware z-score (calibrating curl against community expectations). The field-aware z-score achieves AUC\,=\,0.718 on real stacking-only labels, the strongest result in our evaluation.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:pipeline}{{1}{3}{End-to-end pipeline for Hodge-based citation cartel detection. Citation counts are aggregated into a net-flow matrix, decomposed into gradient (prestige hierarchy), curl (cyclic manipulation), and harmonic (global loops) components via sparse least-squares. Three detection scores are derived: gradient residual (averaging all incident edge departures), triangle curl (averaging 3-ring circulation), and field-aware z-score (calibrating curl against community expectations). The field-aware z-score achieves AUC\,=\,0.718 on real stacking-only labels, the strongest result in our evaluation}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Hodge Decomposition on Graphs}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Temporal Hodge Anomaly Detection}{3}{subsection.2.4}\protected@file@percent }
+\citation{Johnson2014}
+\citation{MacKay2020}
+\citation{Mones2014}
+\citation{Jiang2008}
+\citation{Jiang2008}
+\citation{HomsDones2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Network Hierarchy}{4}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method}{4}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{4}{Method}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Citation Flow Graphs}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Combinatorial Hodge Decomposition}{4}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:hodge}{{1}{4}{Combinatorial Hodge Decomposition}{equation.3.1}{}}
+\newlabel{eq:hodgerank}{{2}{4}{Combinatorial Hodge Decomposition}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Node-Level Scores}{4}{subsection.3.3}\protected@file@percent }
+\citation{Priem2022}
+\citation{JCRData2022}
+\citation{StackingAnnotations2024}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Field-Aware Null Model Calibration}{5}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Data}{5}{section.4}\protected@file@percent }
+\newlabel{sec:data}{{4}{5}{Data}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Real Journal Citation Network with JCR Suppression Labels}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Synthetic Citation Network}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{6}{section.5}\protected@file@percent }
+\newlabel{sec:experiments}{{5}{6}{Experiments}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Setup}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Real-Data Hodge Evaluation}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Synthetic Validation}{6}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:synthetic}{{5.3}{6}{Synthetic Validation}{subsection.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Clean-Base Injection Study}{6}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:injection}{{5.4}{6}{Clean-Base Injection Study}{subsection.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces AUC-ROC for all methods on the real 231-journal citation network with stacking-only labels (7 positives). Error bars show 95\% bootstrap confidence intervals. The field-aware null z-score (AUC\,=\,0.718) is the only method substantially above chance. Raw Hodge scores fall below 0.5 due to the isolated-node structure of stacking journals in this network. The CIDRE-fallback uses spectral clustering\,+\,Poisson null (the published CIDRE package is incompatible with Python\nobreakspace  {}3.12).}}{7}{figure.2}\protected@file@percent }
+\newlabel{fig:auc}{{2}{7}{AUC-ROC for all methods on the real 231-journal citation network with stacking-only labels (7 positives). Error bars show 95\% bootstrap confidence intervals. The field-aware null z-score (AUC\,=\,0.718) is the only method substantially above chance. Raw Hodge scores fall below 0.5 due to the isolated-node structure of stacking journals in this network. The CIDRE-fallback uses spectral clustering\,+\,Poisson null (the published CIDRE package is incompatible with Python~3.12)}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces AUC-ROC on the real 231-journal citation network, stacking-only labels (7 positives).}}{7}{table.1}\protected@file@percent }
+\newlabel{tab:auc}{{1}{7}{AUC-ROC on the real 231-journal citation network, stacking-only labels (7 positives)}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces AUC-ROC of the gradient residual detector as a function of injection weight factor ($w_f$, multiples of mean edge weight $\bar  {w} = 3.23$) on a clean base network ($n_c = 0$, 800 journals), averaged over 20 repetitions per condition. Lines show different cartel types and ring sizes. No condition exceeds AUC\,=\,0.7. The gradient residual achieves its best result (0.617) only for the smallest cyclic ring ($k = 3$) at the heaviest injection weight ($2.0\bar  {w}$). Larger rings ($k = 5, 10$) and reciprocal cliques remain near chance across all weights.}}{8}{figure.3}\protected@file@percent }
+\newlabel{fig:injection}{{3}{8}{AUC-ROC of the gradient residual detector as a function of injection weight factor ($w_f$, multiples of mean edge weight $\bar {w} = 3.23$) on a clean base network ($n_c = 0$, 800 journals), averaged over 20 repetitions per condition. Lines show different cartel types and ring sizes. No condition exceeds AUC\,=\,0.7. The gradient residual achieves its best result (0.617) only for the smallest cyclic ring ($k = 3$) at the heaviest injection weight ($2.0\bar {w}$). Larger rings ($k = 5, 10$) and reciprocal cliques remain near chance across all weights}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Hodge Energy Decomposition}{8}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{8}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{8}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Why Gradient Residual Outperforms Triangle Curl}{8}{subsection.6.1}\protected@file@percent }
+\newlabel{sec:gradient}{{6.1}{8}{Why Gradient Residual Outperforms Triangle Curl}{subsection.6.1}{}}
+\citation{Kojaku2020}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Hodge energy fractions (fraction of total net-flow energy $\|Y_e\|^2$) for the real 231-journal network and the synthetic $n_c=10$ network. The real network is 77\% curl-dominant, nearly identical to the synthetic network with 30 injected cartel members (78\% curl). The gradient fraction of the real network (23\%) is higher than the synthetic (4.3\%), reflecting genuine citation hierarchy, but both are curl-dominated. The near-zero harmonic fraction in the real network reflects its high triangle density ($T = 230{,}336$).}}{9}{figure.4}\protected@file@percent }
+\newlabel{fig:energy}{{4}{9}{Hodge energy fractions (fraction of total net-flow energy $\|Y_e\|^2$) for the real 231-journal network and the synthetic $n_c=10$ network. The real network is 77\% curl-dominant, nearly identical to the synthetic network with 30 injected cartel members (78\% curl). The gradient fraction of the real network (23\%) is higher than the synthetic (4.3\%), reflecting genuine citation hierarchy, but both are curl-dominated. The near-zero harmonic fraction in the real network reflects its high triangle density ($T = 230{,}336$)}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Hodge energy fractions (fraction of total net-flow energy) for the real and synthetic citation networks.}}{9}{table.2}\protected@file@percent }
+\newlabel{tab:energy}{{2}{9}{Hodge energy fractions (fraction of total net-flow energy) for the real and synthetic citation networks}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Why Field-Aware Calibration Is Necessary}{9}{subsection.6.2}\protected@file@percent }
+\citation{Kojaku2020}
+\citation{HomsDones2025}
+\citation{Frantzen2025}
+\citation{Kojaku2020}
+\citation{HomsDones2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Relationship to Prior Work}{10}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Limitations}{10}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}\protected@file@percent }
+\citation{Kojaku2020}
+\citation{HomsDones2025}
+\bibstyle{unsrtnat}
+\bibdata{references}
+\bibcite{JCRData2022}{{1}{2022}{{Clarivate Analytics}}{{}}}
+\bibcite{Kojaku2020}{{2}{2021}{{Kojaku et~al.}}{{Kojaku, Livan, and Masuda}}}
+\bibcite{Jiang2008}{{3}{2011}{{Jiang et~al.}}{{Jiang, Lim, Yao, and Ye}}}
+\bibcite{Pinski1976}{{4}{1976}{{Pinski and Narin}}{{}}}
+\bibcite{West2010}{{5}{2010}{{West et~al.}}{{West, Bergstrom, and Bergstrom}}}
+\bibcite{Bergstrom2007}{{6}{2007}{{Bergstrom}}{{}}}
+\bibcite{Jolly2020}{{7}{2020}{{Jolly et~al.}}{{Jolly, Jain, Bera, and Chakraborty}}}
+\bibcite{Liu2022}{{8}{2022}{{Liu et~al.}}{{Liu, Xia, Feng, Ren, and Liu}}}
+\bibcite{HomsDones2025}{{9}{2025}{{Homs-Dones et~al.}}{{Homs-Dones, MacKay, Sansom, and Zhou}}}
+\bibcite{Wand2024}{{10}{2024}{{Wand et~al.}}{{Wand, Kamps, and Iyetomi}}}
+\bibcite{Frantzen2025}{{11}{2025}{{Frantzen and Schaub}}{{}}}
+\bibcite{Johnson2014}{{12}{2014}{{Johnson et~al.}}{{Johnson, Dom{\'\i }nguez-Garc{\'\i }a, Donetti, and Mu{\~n}oz}}}
+\bibcite{MacKay2020}{{13}{2020}{{MacKay et~al.}}{{MacKay, Johnson, and Sansom}}}
+\bibcite{Mones2014}{{14}{2014}{{Mones et~al.}}{{Mones, Pollner, and Vicsek}}}
+\bibcite{Priem2022}{{15}{2022}{{Priem et~al.}}{{Priem, Piwowar, and Orr}}}
+\bibcite{StackingAnnotations2024}{{16}{2024}{{Grobelnik}}{{}}}
+\gdef \@abspage@last{12}

@@ -1,0 +1,15 @@
+{
+  "title": "Hodge Decomposition Detects Citation Cartels",
+  "summary": "Generated a 12-page, two-column, publication-ready LaTeX paper titled 'Curl in the Citation Graph: Hodge Flow Decomposition Detects Citation Cartels via Field-Aware Calibration'. The paper covers: (1) Introduction motivating the Helmholtz-Hodge decomposition as a density-independent citation cartel detector; (2) Background covering HodgeRank, CIDRE, CDFD, HLSAD, and network hierarchy literature with 16 numbered citations; (3) Method section with full mathematical formulation of gradient, curl, and harmonic decomposition, node-level scores (gradient residual, triangle curl, HodgeRank prestige), and field-aware null model calibration; (4) Data section describing the 231-journal OpenAlex network with JCR stacking/self-citation labels and the 800-journal synthetic network; (5) Experiments with real-data AUC evaluation, synthetic validation, clean-base injection study, and Hodge energy decomposition; (6) Discussion explaining why gradient residual outperforms triangle curl, why field-aware calibration is necessary, relationship to CIDRE/CDFD/HLSAD, and 5 numbered limitations; (7) Conclusion. All 4 figures (fig1–fig4, all 21:9 aspect ratio) were included as two-column figure* environments. Tables 1 and 2 were initially placed as single-column table environments but caused overflow into the adjacent column; these were fixed to table*[!t] spanning both columns, resolving the layout issue. Bibliography assembled via Semantic Scholar (10 entries fetched, 4 manually crafted for Mones2014/West2010/Pinski1976/Bergstrom2007, 2 @misc dataset entries for JCR and stacking annotations). Compiled via 4-step pdflatex/bibtex/pdflatex/pdflatex process with bibtex.original (bibtex not on PATH). All 12 pages visually reviewed at 150 DPI — no remaining layout issues. Final PDF: 12 pages, 2.5 MB, 0 LaTeX errors.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg",
+      "figures/fig3_v0.jpg",
+      "figures/fig4_v0.jpg"
+    ]
+  }
+}
