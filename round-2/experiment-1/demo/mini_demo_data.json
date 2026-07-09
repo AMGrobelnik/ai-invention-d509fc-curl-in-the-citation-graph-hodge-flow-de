@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "method_name": "Hodge-Curl Cartel Detector v2 (Real-Data & Clean-Base Validation)",
+    "description": "Combinatorial Hodge decomposition of journal citation net-flows detects cyclic citation patterns. 6-phase evaluation: real data AUC, CIDRE comparison, synthetic validation, clean-base injection, field-aware null model, and energy fraction analysis.",
+    "n_journals": 231,
+    "n_stacking_positives": 7,
+    "n_all_suppressed_positives": 40,
+    "primary_label_name": "stacking_only",
+    "phase1_auc_table": {
+      "hodge_grad_residual": {
+        "auc_stacking_only": 0.45408163265306123,
+        "ci_stacking": [
+          0.15197663766025957,
+          0.7522409046214357
+        ],
+        "auc_all_suppressed": 0.11321989528795813,
+        "ci_all": [
+          0.04771162367811715,
+          0.1982552868522256
+        ],
+        "auc_primary": 0.45408163265306123,
+        "ci_primary": [
+          0.15197663766025957,
+          0.7522409046214357
+        ]
+      },
+      "hodge_curl_raw": {
+        "auc_stacking_only": 0.43048469387755106,
+        "ci_stacking": [
+          0.14399074074074072,
+          0.725925925925926
+        ],
+        "auc_all_suppressed": 0.11151832460732987,
+        "ci_all": [
+          0.04774870746206373,
+          0.19501781559045953
+        ],
+        "auc_primary": 0.43048469387755106,
+        "ci_primary": [
+          0.14399074074074072,
+          0.725925925925926
+        ]
+      },
+      "hodge_prestige": {
+        "auc_stacking_only": 0.5510204081632654,
+        "ci_stacking": [
+          0.26277805933491877,
+          0.8125009258898289
+        ],
+        "auc_all_suppressed": 0.5912303664921466,
+        "ci_all": [
+          0.5105906413612565,
+          0.6686074668208938
+        ],
+        "auc_primary": 0.5510204081632654,
+        "ci_primary": [
+          0.26277805933491877,
+          0.8125009258898289
+        ]
+      }
+    },
+    "phase2_cidre": {
+      "method_used": "cidre_poisson_spectral_fallback",
+      "n_groups": 179,
+      "auc_stacking": 0.34311224489795916,
+      "auc_all": 0.11230366492146598
+    },
+    "phase3_synthetic_n_c10": {
+      "hodge_grad_auc": 0.7366666666666668,
+      "hodge_curl_auc": 0.5582683982683982,
+      "cidre_auc": 0.8450865800865801,
+      "iter1_approx_cidre_auc": 0.626,
+      "energy_fractions": {
+        "gradient": 0.04281665032115864,
+        "curl": 0.7796832993189189,
+        "harmonic": 0.17750005035970415
+      }
+    },
+    "phase4_injection_summary": {
+      "n_conditions": 40,
+      "detectability_thresholds": {
+        "cyclic_k3_grad_residual_thresh_w0.7": null,
+        "cyclic_k3_curl_raw_thresh_w0.7": null,
+        "cyclic_k4_grad_residual_thresh_w0.7": null,
+        "cyclic_k4_curl_raw_thresh_w0.7": null,
+        "cyclic_k5_grad_residual_thresh_w0.7": null,
+        "cyclic_k5_curl_raw_thresh_w0.7": null,
+        "cyclic_k10_grad_residual_thresh_w0.7": null,
+        "cyclic_k10_curl_raw_thresh_w0.7": null,
+        "reciprocal_k3_grad_residual_thresh_w0.7": null,
+        "reciprocal_k3_curl_raw_thresh_w0.7": null,
+        "reciprocal_k4_grad_residual_thresh_w0.7": null,
+        "reciprocal_k4_curl_raw_thresh_w0.7": null,
+        "reciprocal_k5_grad_residual_thresh_w0.7": null,
+        "reciprocal_k5_curl_raw_thresh_w0.7": null,
+        "reciprocal_k10_grad_residual_thresh_w0.7": null,
+        "reciprocal_k10_curl_raw_thresh_w0.7": null
+      },
+      "note": "AUC>0.7 threshold w_factor for cyclic k=3 (triangle-based detection)"
+    },
+    "phase5_null_model": {
+      "n_field_communities": 44,
+      "spearman_rho": 0.583694213470295,
+      "recommendation": "use_field_aware",
+      "degree_null_auc_stacking": 0.617984693877551,
+      "field_null_auc_stacking": 0.7181122448979592
+    },
+    "phase6_energy": {
+      "real_gradient": 0.2300716068108262,
+      "real_curl": 0.7699283931455518,
+      "synth_gradient": 0.04281665032115864,
+      "synth_curl": 0.7796832993189189,
+      "delta_curl": 0.00975490617336705
+    },
+    "combined_auc_primary_label": {
+      "hodge_grad_residual": 0.45408163265306123,
+      "hodge_curl_raw": 0.43048469387755106,
+      "cidre": 0.34311224489795916,
+      "curl_z_degree_null": 0.617984693877551,
+      "curl_z_field_null": 0.7181122448979592
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "openalex_real_231journal_jcr_suppression",
+      "examples": [
+        {
+          "input": "Journal: Cell. ISSN: 0092-8674. Works count: 27001. Cited by count: 8973350. HodgeRank prestige: 74.5323. Gradient residual: 106.6222. Triangle curl raw: 179.5578. Curl z-score (degree-null): -0.2041. Curl z-score (field-null): 5.7568. CIDRE anomaly score: 2.2012.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "106.622229",
+          "predict_hodge_curl_raw": "179.557753",
+          "predict_hodge_prestige": "74.532304",
+          "predict_cidre": "2.201184",
+          "predict_curl_z_degree_null": "-0.204054",
+          "predict_curl_z_field_null": "5.756826",
+          "metadata_journal_name": "Cell",
+          "metadata_openalex_id": "https://openalex.org/S110447773",
+          "metadata_issn_l": "0092-8674",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Cancer. ISSN: 0008-543X. Works count: 53361. Cited by count: 3132927. HodgeRank prestige: -18.4643. Gradient residual: 29.1589. Triangle curl raw: 55.7702. Curl z-score (degree-null): -4.1959. Curl z-score (field-null): -2.1781. CIDRE anomaly score: 5.3276.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "29.158883",
+          "predict_hodge_curl_raw": "55.770150",
+          "predict_hodge_prestige": "-18.464305",
+          "predict_cidre": "5.327583",
+          "predict_curl_z_degree_null": "-4.195942",
+          "predict_curl_z_field_null": "-2.178081",
+          "metadata_journal_name": "Cancer",
+          "metadata_openalex_id": "https://openalex.org/S126033908",
+          "metadata_issn_l": "0008-543X",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Oncotarget. ISSN: 1949-2553. Works count: 27838. Cited by count: 1006067. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (degree-null): 0.0000. Curl z-score (field-null): 0.0000. CIDRE anomaly score: 0.0000.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "Oncotarget",
+          "metadata_openalex_id": "https://openalex.org/S126644158",
+          "metadata_issn_l": "1949-2553",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Scientific Reports. ISSN: 2045-2322. Works count: 303170. Cited by count: 7873745. HodgeRank prestige: 21.1898. Gradient residual: 23.3289. Triangle curl raw: 50.5971. Curl z-score (degree-null): -4.9726. Curl z-score (field-null): -3.4421. CIDRE anomaly score: 23.2433.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "23.328882",
+          "predict_hodge_curl_raw": "50.597083",
+          "predict_hodge_prestige": "21.189806",
+          "predict_cidre": "23.243263",
+          "predict_curl_z_degree_null": "-4.972590",
+          "predict_curl_z_field_null": "-3.442150",
+          "metadata_journal_name": "Scientific Reports",
+          "metadata_openalex_id": "https://openalex.org/S196734849",
+          "metadata_issn_l": "2045-2322",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Cellular and Molecular Biology. ISSN: 0145-5680. Works count: 3044. Cited by count: 18668. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (degree-null): 0.0000. Curl z-score (field-null): 0.0000. CIDRE anomaly score: 0.0000.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "Cellular and Molecular Biology",
+          "metadata_openalex_id": "https://openalex.org/S21749381",
+          "metadata_issn_l": "0145-5680",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Frontiers in Immunology. ISSN: 1664-3224. Works count: 55315. Cited by count: 1657456. HodgeRank prestige: -56.9695. Gradient residual: 68.9251. Triangle curl raw: 111.5334. Curl z-score (degree-null): -4.5160. Curl z-score (field-null): 0.8384. CIDRE anomaly score: 7.9088.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "68.925139",
+          "predict_hodge_curl_raw": "111.533443",
+          "predict_hodge_prestige": "-56.969536",
+          "predict_cidre": "7.908835",
+          "predict_curl_z_degree_null": "-4.516002",
+          "predict_curl_z_field_null": "0.838423",
+          "metadata_journal_name": "Frontiers in Immunology",
+          "metadata_openalex_id": "https://openalex.org/S2595292759",
+          "metadata_issn_l": "1664-3224",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Frontiers in Oncology. ISSN: 2234-943X. Works count: 37450. Cited by count: 635844. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (degree-null): 0.0000. Curl z-score (field-null): 0.0000. CIDRE anomaly score: 0.0000.",
+          "output": "suppressed_stacking",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "Frontiers in Oncology",
+          "metadata_openalex_id": "https://openalex.org/S2596394214",
+          "metadata_issn_l": "2234-943X",
+          "metadata_is_stacking_suppressed": "True",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: BioMed Research International. ISSN: 2314-6133. Works count: 26831. Cited by count: 797532. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (degree-null): 0.0000. Curl z-score (field-null): 0.0000. CIDRE anomaly score: 0.0000.",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "BioMed Research International",
+          "metadata_openalex_id": "https://openalex.org/S1010394304",
+          "metadata_issn_l": "2314-6133",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Sustainability. ISSN: 2071-1050. Works count: 107084. Cited by count: 2229076. HodgeRank prestige: -11.7754. Gradient residual: 24.9631. Triangle curl raw: 57.8200. Curl z-score (degree-null): -3.3275. Curl z-score (field-null): -2.8405. CIDRE anomaly score: 4.3388.",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "24.963143",
+          "predict_hodge_curl_raw": "57.820026",
+          "predict_hodge_prestige": "-11.775445",
+          "predict_cidre": "4.338835",
+          "predict_curl_z_degree_null": "-3.327478",
+          "predict_curl_z_field_null": "-2.840466",
+          "metadata_journal_name": "Sustainability",
+          "metadata_openalex_id": "https://openalex.org/S10134376",
+          "metadata_issn_l": "2071-1050",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Sensors. ISSN: 1424-8220. Works count: 79869. Cited by count: 1875484. HodgeRank prestige: -8.7890. Gradient residual: 20.0659. Triangle curl raw: 46.9768. Curl z-score (degree-null): -5.3491. Curl z-score (field-null): -3.9444. CIDRE anomaly score: 12.8165.",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "20.065902",
+          "predict_hodge_curl_raw": "46.976827",
+          "predict_hodge_prestige": "-8.788988",
+          "predict_cidre": "12.816471",
+          "predict_curl_z_degree_null": "-5.349134",
+          "predict_curl_z_field_null": "-3.944372",
+          "metadata_journal_name": "Sensors",
+          "metadata_openalex_id": "https://openalex.org/S101949793",
+          "metadata_issn_l": "1424-8220",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Nutrients. ISSN: 2072-6643. Works count: 38836. Cited by count: 1239625. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (degree-null): 0.0000. Curl z-score (field-null): 0.0000. CIDRE anomaly score: 0.0000.",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "Nutrients",
+          "metadata_openalex_id": "https://openalex.org/S110785341",
+          "metadata_issn_l": "2072-6643",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: Clinical and Experimental Medicine. ISSN: 1591-8890. Works count: 4408. Cited by count: 51409. HodgeRank prestige: 0.0000. Gradient residual: 0.0000. Triangle curl raw: 0.0000. Curl z-score (degree-null): 0.0000. Curl z-score (field-null): 0.0000. CIDRE anomaly score: 0.0000.",
+          "output": "suppressed_self_citation",
+          "predict_hodge_grad_residual": "0.000000",
+          "predict_hodge_curl_raw": "0.000000",
+          "predict_hodge_prestige": "0.000000",
+          "predict_cidre": "0.000000",
+          "predict_curl_z_degree_null": "0.000000",
+          "predict_curl_z_field_null": "0.000000",
+          "metadata_journal_name": "Clinical and Experimental Medicine",
+          "metadata_openalex_id": "https://openalex.org/S1255940",
+          "metadata_issn_l": "1591-8890",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "True"
+        },
+        {
+          "input": "Journal: NeuroImage. ISSN: 1053-8119. Works count: 28547. Cited by count: 2345001. HodgeRank prestige: -5.3287. Gradient residual: 26.0858. Triangle curl raw: 60.1961. Curl z-score (degree-null): -3.4652. Curl z-score (field-null): -1.9290. CIDRE anomaly score: 15.0318.",
+          "output": "not_suppressed",
+          "predict_hodge_grad_residual": "26.085791",
+          "predict_hodge_curl_raw": "60.196103",
+          "predict_hodge_prestige": "-5.328655",
+          "predict_cidre": "15.031839",
+          "predict_curl_z_degree_null": "-3.465181",
+          "predict_curl_z_field_null": "-1.928995",
+          "metadata_journal_name": "NeuroImage",
+          "metadata_openalex_id": "https://openalex.org/S103225281",
+          "metadata_issn_l": "1053-8119",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "False"
+        },
+        {
+          "input": "Journal: Nature Materials. ISSN: 1476-1122. Works count: 6986. Cited by count: 1683603. HodgeRank prestige: 20.8662. Gradient residual: 48.1423. Triangle curl raw: 96.6849. Curl z-score (degree-null): -2.7185. Curl z-score (field-null): -2.1386. CIDRE anomaly score: 7.8374.",
+          "output": "not_suppressed",
+          "predict_hodge_grad_residual": "48.142304",
+          "predict_hodge_curl_raw": "96.684936",
+          "predict_hodge_prestige": "20.866161",
+          "predict_cidre": "7.837377",
+          "predict_curl_z_degree_null": "-2.718476",
+          "predict_curl_z_field_null": "-2.138579",
+          "metadata_journal_name": "Nature Materials",
+          "metadata_openalex_id": "https://openalex.org/S103895331",
+          "metadata_issn_l": "1476-1122",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "False"
+        },
+        {
+          "input": "Journal: Biochemistry. ISSN: 0006-2960. Works count: 71076. Cited by count: 3923468. HodgeRank prestige: -8.9320. Gradient residual: 18.3684. Triangle curl raw: 45.5674. Curl z-score (degree-null): -4.8412. Curl z-score (field-null): -4.0169. CIDRE anomaly score: 6.7668.",
+          "output": "not_suppressed",
+          "predict_hodge_grad_residual": "18.368370",
+          "predict_hodge_curl_raw": "45.567412",
+          "predict_hodge_prestige": "-8.931994",
+          "predict_cidre": "6.766796",
+          "predict_curl_z_degree_null": "-4.841172",
+          "predict_curl_z_field_null": "-4.016859",
+          "metadata_journal_name": "Biochemistry",
+          "metadata_openalex_id": "https://openalex.org/S104038378",
+          "metadata_issn_l": "0006-2960",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "False"
+        },
+        {
+          "input": "Journal: FEBS Letters. ISSN: 0014-5793. Works count: 59929. Cited by count: 2462901. HodgeRank prestige: -16.3082. Gradient residual: 21.9251. Triangle curl raw: 46.1120. Curl z-score (degree-null): -4.7351. Curl z-score (field-null): -3.2230. CIDRE anomaly score: 4.1790.",
+          "output": "not_suppressed",
+          "predict_hodge_grad_residual": "21.925051",
+          "predict_hodge_curl_raw": "46.112016",
+          "predict_hodge_prestige": "-16.308200",
+          "predict_cidre": "4.178997",
+          "predict_curl_z_degree_null": "-4.735098",
+          "predict_curl_z_field_null": "-3.223007",
+          "metadata_journal_name": "FEBS Letters",
+          "metadata_openalex_id": "https://openalex.org/S104830714",
+          "metadata_issn_l": "0014-5793",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "False"
+        },
+        {
+          "input": "Journal: Applied Physics Letters. ISSN: 0003-6951. Works count: 141539. Cited by count: 6103309. HodgeRank prestige: 11.2432. Gradient residual: 30.5343. Triangle curl raw: 77.0342. Curl z-score (degree-null): -3.4406. Curl z-score (field-null): -1.2818. CIDRE anomaly score: 53.2028.",
+          "output": "not_suppressed",
+          "predict_hodge_grad_residual": "30.534253",
+          "predict_hodge_curl_raw": "77.034184",
+          "predict_hodge_prestige": "11.243215",
+          "predict_cidre": "53.202846",
+          "predict_curl_z_degree_null": "-3.440582",
+          "predict_curl_z_field_null": "-1.281845",
+          "metadata_journal_name": "Applied Physics Letters",
+          "metadata_openalex_id": "https://openalex.org/S105243760",
+          "metadata_issn_l": "0003-6951",
+          "metadata_is_stacking_suppressed": "False",
+          "metadata_is_any_suppressed": "False"
+        }
+      ]
+    }
+  ]
+}
